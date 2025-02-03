@@ -36,7 +36,9 @@ Example: end-user protects/locks 10 GHO, and the smart contract automatically ta
 - The user can use the ur369.eth interface any time and will use the Sign Key (or quantum resistant Sign key) to perform the operations: Protect (i.e., lock/safeguard native token(s) and mint urToken(s) to themselves). Transfer (i.e., send urToken(s)). Claim (i.e., burn urToken(s) to unlock/unprotect native tokens).
 - The Master Key helps the end-user to reset their Sign Key (in case Sign Key is lost).
 
-Note: The Master Key is randomly generated on-chain and encrypted. It will be presented only once and must be kept someplace safe (preferably offline). The Master Key is issued with separators (-) to facilitate its migration from online to off-line with near-zero chances of mispelling it. The system indicates to the user in order to safely transacribe the Master Key from online to offline with a state-of-the-art OpSec. See "Insight (23)".
+Note: The Master Key is randomly generated on-chain and encrypted. It will be presented only once and must be kept someplace safe (preferably offline). The Master Key is issued with separators (-) to facilitate its migration from online to off-line with near-zero chances of mispelling it. 
+
+The system indicates to the user in order to safely transacribe the Master Key from online to offline with a state-of-the-art OpSec. See "Insight (23)".
 
 ### Transferring urTokens
 
