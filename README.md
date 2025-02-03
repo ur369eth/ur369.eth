@@ -38,7 +38,8 @@ Example: end-user protects/locks 10 GHO, and the smart contract automatically ta
 
 Note: The Master Key is randomly generated on-chain and encrypted. It will be presented only once and must be kept someplace safe (preferably offline). The Master Key is issued with separators (-) to facilitate its migration from online to off-line with near-zero chances of mispelling it. 
 
-The system indicates to the user in order to safely transacribe the Master Key from online to offline with a state-of-the-art OpSec. See "Insight (23)".
+The system indicates the step-by-step instructions to the user in order to safely transacribe the Master Key from online to offline.
+A state-of-the-art OpSec can be seen in ur369.eth.limo >> tab "Insight", point (23).
 
 ### Transferring urTokens
 
