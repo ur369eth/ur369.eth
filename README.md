@@ -10,7 +10,7 @@ Description of working of Smart Contract is as follows:
 - Fee Collection System (Benefaction-fee)
 - Award System
 - Whitelist Mechanism
-- Concealed Master Key (Master Key) and Sign Key Mechanism to perform any action (plus Quantum Key option)
+- Master Key and Sign Key (or Quantum Key) Mechanism to perform any action
 
 ### Decentralized Lock of Native Tokens / Mint of urTokens:
 
@@ -143,7 +143,7 @@ There are two ways to check that caller is a contract address or not:
   1. Any of above can be used to check whether caller is an EOA or a contract.
   2. isContract() function of Address Library is deprecated due to security reasons.
 
-### Master Key and Sign Key (or quantum Key) Mechanism to perform any action
+### Master Key and Sign Key (or Quantum Key) Mechanism to perform any action
 
 **_Description:_** To prevent users from transferring funds directly from any wallet, the system implements this feature. On each urTokens operation (protect, transfsr or claim/unprotect). the user must enter their Sign Key on the ur369.eth.limo UI otherwise transaction will fail.
 
