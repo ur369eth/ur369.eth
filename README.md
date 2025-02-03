@@ -1,4 +1,4 @@
-# uToken (Function wise functionality is described in Code)
+# urToken (Function wise functionality is described in Code)
 
 Description of working of Smart Contract is as follows:
 
@@ -6,7 +6,7 @@ Description of working of Smart Contract is as follows:
 
 - Wrapping Tokens or Coins
 - Unwrapping Tokens or Coins
-- Transfer uTokens
+- Transfer urTokens
 - Fee Collection System
 - Reward System
 - Whitelist Mechanism
@@ -14,14 +14,14 @@ Description of working of Smart Contract is as follows:
 
 ### Wrapping Tokens and Coins
 
-**_Definition:_** Locking Tokens or Coins and receiving uToken(s) which is/are equal in numbers to respective tokens or coins. For example: user want to wrap 10 USDT, he will enter 10 USDT and our smart contract will take 10 USDT from user and mint 10 uUSDT tokens in account of user.
+**_Definition:_** Locking Tokens or Coins and receiving urToken(s) which is/are equal in numbers to respective tokens or coins. For example: user want to wrap 10 USDT, he will enter 10 USDT and our smart contract will take 10 USDT from user and mint 10 uUSDT tokens in account of user.
 
 **_Procedure_**
 
 - Enter desired amount to be wrapped
 - System will check that this is new user or not. In case of new user system will ask him to create a password and he will be provided at time a recovery phrase which will be only shown once and will be used by the user to recover his password in case of forgot password. In case of already registered user, system will just only show the form to take user desired amount of token or coin to be wrapped.
 - Smart contract will save user password and recovery phrase.
-- Smart contract will mint amount of respective uTokens in account of user.
+- Smart contract will mint amount of respective urTokens in account of user.
 - User can come and unwrap it any time.
 
 ### Un-Wrapping Tokens and Coins
@@ -31,19 +31,19 @@ Description of working of Smart Contract is as follows:
 **_Procedure_**
 
 - Enter desired amount to be unwrapped
-- Smart contract will burn amount of respective uTokens from account of user.
+- Smart contract will burn amount of respective urTokens from account of user.
 - Respective tokens or coins will be transferred back to the user.
 
-### Transferring uTokens
+### Transferring urTokens
 
-**_Description:_** Any time user can transfer uTokens to anyone with some restrictions explained in the procedure section.
+**_Description:_** Any time user can transfer urTokens to anyone with some restrictions explained in the procedure section.
 
 **_Procedure_**
 
-- Select uToken and click on transfer button.
+- Select urToken and click on transfer button.
 - Enter recipient address and amount.
 - Enter password Click on transfer button.
-- Smart contract will transfer uTokens from sender to recipient.
+- Smart contract will transfer urTokens from sender to recipient.
 - Now recipient can come to UI and transfer or unwrap any time.
 
 ### Fee Collection System
@@ -52,7 +52,7 @@ Description of working of Smart Contract is as follows:
 
 **_Fee Collectors_**
 
-1. 30% of 0.369% will be transferred to the reward distributor address which will send reward to the winner later.
+1. 30% of 0.369% will be transferred to the reward distriburTor address which will send reward to the winner later.
 2. 30% of 0.369% will be transferred to the charity address.
 3. 30% of 0.369% will be transferred to the fund address.
 4. 10% of 0.369% will be transferred to the programmers address.
@@ -83,7 +83,7 @@ Implementation can be usderstand in two ways.
    We will not implement that one as for any/all EOA user will have to input their password and as you said >> In the first case, all addresses will be required to enter password. ✅
 
 2. Sender is Uniswap or AAVE:
-   In the second case, we will check if the sender is a contract address, and then we will allow it to transfer uTokens without any password. ✅
+   In the second case, we will check if the sender is a contract address, and then we will allow it to transfer urTokens without any password. ✅
 
 **Strategy to Implement Whitelist Functinality:**
 There are two ways to check that caller is a contract address or not:
