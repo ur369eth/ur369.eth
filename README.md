@@ -1,3 +1,5 @@
+npx hardhat ignition deploy ignition/modules/urTokenFactory.ts --network mainnet --verify
+
 # urToken (Function wise functionality is described in Code)
 
 Description of working of Smart Contract is as follows:
@@ -52,7 +54,7 @@ Description of working of Smart Contract is as follows:
 
 **_Fee Collectors_**
 
-1. 30% of 0.369% will be transferred to the reward distriburTor address which will send reward to the winner later.
+1. 30% of 0.369% will be transferred to the reward distributor address which will send reward to the winner later.
 2. 30% of 0.369% will be transferred to the charity address.
 3. 30% of 0.369% will be transferred to the fund address.
 4. 10% of 0.369% will be transferred to the programmers address.
@@ -97,8 +99,4 @@ There are two ways to check that caller is a contract address or not:
 ### Password and Recovery Phrase Mechanism to perform any action
 
 **_Description:_** To prevent users from transferring funds directly from metamask, we have implemented this feature. On each unwrap or transfer user must have to enter password and must have to come our UI otherwise transaction will be failed.
-In case of forgot password, we have implemented a mechanism which will implement recovery phrase functionality. If user want to change his password or forgot his password, then recovery phrase will be used.
-
-## Deployed contract address on mainnet
-
-urTokenFactoryContract: [https://etherscan.io/address/0x01cF52811DEB802866F36A70c52A34cE7c51718e#code]
+In case of forgot password, we have implemented a mechanism which will implement recovery phrase functionality. If user want to change his password or forgot his password, then recovery phrase will be used
