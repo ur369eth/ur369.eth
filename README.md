@@ -133,9 +133,9 @@ The code functionality continues in subsequent fields.
 
 ### Sign Key to Perform User Operations (Transactions)
 
-**_Description:_** urTokens can be transferred if-and-only-if the user inputs the respective Sign Key. Without the Sign Key urTokens cannot be moved.
+**_Description:_** urTokens can be transferred if-and-only-if the user inputs the respective Sign Key.
 
-The feature has been impelmented primarily to prevent a bad actor that would have gained access to the wallet's private keys of the user. Therefore, on each user operation involving urTokens 'Transfer' or 'Claim' >> the user must enter their respective Sign Key on the UI otherwise transaction will fail.
+The feature has been impelmented to serve as an extra layer of protection, primarily to prevent any bad actor from executing a transaction even if they would have gained access to the wallet's private keys of the user. Therefore, on each user operation involving urTokens 'Transfer' or 'Claim' >> the user must enter their respective Sign Key on the UI otherwise transaction will fail. Without the Sign Key urTokens cannot be moved.
 
 
 ### Transfer urTokens
@@ -211,7 +211,7 @@ There are two ways to check that caller is a contract address or not:
 
 In the beginning and even before allocating funds into the contract, the user can use the same procedure as described above to confirm that their Sign Key has been exported from online to offline correctly. 
 
-When these steps are applied and the user can see: The field 'Reset Sign Key' to input and confirm new Sign Key, that means the Master Key has been transcribed without any misspellings and the user can allocate funds with 100% confidence into the contract.
+When these steps are applied and the user can see the field 'Reset Sign Key' to input and confirm new Sign Key, that means the Master Key has been transcribed without any misspellings and the user can allocate funds with 100% confidence into the contract.
 
 The Master Key must always be kept in a safe place (preferably offline).
 
@@ -252,15 +252,15 @@ NIST recommends multiple quantum-resistant algorithms, including SPHINCS+, Rainb
 
 To maximize security, ur369.eth implements three distinct layers of protection:
 
-### Front-End Quantum-Resistant Signature: 
+### (1) Front-End Quantum-Resistant Signature: 
 
 Dilithium-Crystals applied on the front end ensures protection against quantum threats.
 
-### Backend Keccak Hash: 
+### (2) Backend Keccak Hash: 
 
 The Keccak-256 hash provides backend-level protection, safeguarding the Master Key and the Sign Key on-chain.
 
-### Frontend-Backend Connection Verification: 
+### (3) Frontend-Backend Connection Verification: 
 
-Works for both Classic and Quantum Protection, thus by requiring the Sign Key and/or the Quantum Resistant Sign Key (when enabled) to sign >> unauthorized direct access is prevented, ensuring that only onchain-verified-users can interact with the application.
+This works for both Classical and Quantum Protection, thus by requiring the Classical Sign Key or the Quantum Resistant Sign Key (when enabled) to sign then any unauthorized direct access is prevented, ensuring that only onchain-verified-users can interact with the application.
 
