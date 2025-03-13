@@ -22,7 +22,13 @@ It works by abstracting away the wallet's private keys to sign transactions and 
 
 On the other side of the coin, it is a mechanism design in wich, without having a centralized custody of the tokens, the system accepts deposits of approved native tokens to isolate/remove said native tokens from circulation to keep them *safeguarded from theft and protected from quantum threats within the ur369.eth smart contract*, while simultaneously, upon receiving native tokens, the system mints urTokens (ultra resistant Tokens) and automatically sends urTokens to the user's wallet at 1:1 ratio in regards of the protected native tokens. 
 
-On the edge of the coin, it is a self-organizing distributive-system as in the process of protecting the native tokens plus issuing-and-sending urTokens (ultra resistant Tokens) to the user's wallet >> the system shows (upfront) to the user a benefaction-fee for the service provided (i.e., a fix 0.369% of the amount to be deposited/protected) from which, if the user consents and pays the service-fee to protect their native tokens, then when the system receives the benefaction-fee >> programmatically distributes the 0.369% into 4 addresses as follows (A) 30% to fund public goods (so far on payroll Giveth, Gitcoin and the Giving Block -more public goods can be added later-), (B) 30% to award randomly selected users every 369 hours, (C) 30% to self-sustain ur369.eth (the social good protocol), and (D) 10% to support the Community and Developers Benefit Fund.
+On the edge of the coin, it is a self-organizing distributive-system as in the process of protecting the native tokens plus issuing-and-sending urTokens (ultra resistant Tokens) to the user's wallet >> the system shows (upfront) to the user the benefaction-fee for the service provided:
+
+(i) A one time flat fee of $3.69 per address -collected in crypto- and only collected if the user opts for the Quantum Resistant Key.
+
+(ii) And a 0.369% of the amount being protected -collected each time the user allocates funds within the contract-.
+
+If the user consents and pays the fee to protect their native tokens, then when the system receives it >> programmatically distributes the benefaction-fee into 4 addresses as follows (A) 30% to fund public goods (so far on payroll Giveth, Gitcoin and the Giving Block -more public goods can be added later-), (B) 30% to award randomly selected users every 369 hours, (C) 30% to self-sustain ur369.eth (the social good protocol), and (D) 10% to support the Community and Developers Benefit Fund.
 
 **_Procedure_**
 
