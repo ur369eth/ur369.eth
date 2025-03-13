@@ -167,11 +167,11 @@ The ur369.eth protocol does not charge a fee for this operation, only the gas fe
 
 ### Whitelist Mechanism
 
-**Definition:** The user can enter the Sign Key on the UI to perform any transaction with urTokens. However, Whitelisted smart contract(s) will not have to input the respective Sign Key to internally or externally transfer urTokens. 
+**Definition:** The user can enter the Sign Key on the UI to perform any transaction with urTokens. However, whitelisted smart contract(s) will not have to input the respective Sign Key to internally or externally transfer urTokens. 
 
 **Implementation Guide:**
 
-Foor example, the sender is Uniswap or AAVE (Uniswap is actually whitelisted on the Ethereum mainnet):
+For example, the sender is Uniswap or AAVE (Uniswap is actually whitelisted on the Ethereum mainnet):
    The system checks if the sender is a whitelisted contract address, and then the system allows for it to transfer urTokens without having to input Sign Key.
 
 **Strategy to Implement Whitelist Functionality:**
