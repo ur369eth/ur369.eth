@@ -6,11 +6,11 @@ Description of working of Smart Contract is as follows:
 
 - Decentralized Protection of Native Tokens
 - Fee Collection System (Benefaction-fee)
+- Award System (Hybrid)
+- Sign Key to Perform User Operations (Transactions)
 - Transfer urTokens (ultra resistant Tokens)
 - Decentralized Unprotection of Native Tokens (Claim)
-- Award System
 - Whitelist Mechanism
-- Sign Key to Perform User Operations (Transactions)
 - Master Key as Recovery Mechanism
 - Quantum Resistant Approach
 
@@ -96,9 +96,43 @@ In essence, the system charges the benefaction-fee when protecting tokens; but n
 - First the fee is shown to the user before protecting their native tokens. When the user proceeds to protect their native tokens >> the benefaction-fee is deducted and distributed to the respective addresses for social-good-purpose.
   
 
-### Transferring urTokens
+### Awward System
 
-**_Definition:_** urTokens can be transfered if-and-only-if the user enters their respective Sign Key. Protected tokens can be permissionlessly transfered by the legit owners at any time and without restrictions.
+**_Description:_** Every time a user protects native tokens the system charges a Benefaction-fee which is used, in its great majority, to award to the participants of the system and the rest is used for public goods funding.
+
+Every 369 hours (Gift Pool) and every 369 days (Stateless Pool) a participant that protected native tokens will be randomly selected and their address will be displayed on the UI in a semi-concealed fashion. 
+
+**_Procedure_**
+
+- Smart contract collects benefaction-fee and sends 30% to urgift.eth and 30% to ur-impact.eth
+- Each detail will be shown on the 'Award' page regarding the assets that can be awarded to users and that are within the displayed addresses
+- The randomly selected participant's address will be shown in the Awards page every 369 hours in a semi-concealed fashion
+  
+*_Note: The award system is hybrid, meaning that the above is within the scope of the code. However, for the part shared below, in regards of this segment of 'Award System' the code functionality is not included as the next section for the Award System operation is executed manually. The reason for the manual approach can be found in the ur369.eth.limo UI -Insight page -- point (14)-._*
+
+*_Just as a courtesy and honoring transparency, here is shared the Award System Manual approach:_*
+
+*_The objective is to avoid a sybil exploit that can be effected if the system send awards automatically via code (as it was found while testing) and the purpose is for the participants to receive awards without any possibility of them tricking the system. Awards can be sent from: (A) the Gift Pool, (B) the Impact Pool, (C) the Stateless Pool (any award for A, B and C is received by the user if they fulfilled the stated pool conditions - see Awards page), and (D) to receive awards from satellite-addresses that work in harmony with the ur369NFT mint._* 
+
+*_The transparent nature of a public blockchain (like Ethereum) where urTokens are deployed, can attest for the fullfilment of these manual transactions that can be correlated and publicly audited to confirm that an address displayed in the UI, for example, did (or did not) mint the ur369NFT and did or did not receive the corresponding urTokens award if selected by the system._*
+
+*_In conclusion, if the system is being used and there are funds within the respective addresses to distribute awards >> the awards shall arrive to the randomly selected ones._*
+
+The code functionality continues in subsequent fields.
+
+
+### Sign Key to Perform User Operations (Transactions)
+
+**_Description:_** urTokens can be transferred if-and-only-if the user inputs the respective Sign Key. Without the Sign Key urTokens cannot be moved.
+
+The feature has been impelmented primarily to prevent a bad actor that would have gained access to the wallet's private keys of the user. Therefore, on each user operation involving urTokens 'Transfer' or 'Claim' >> the user must enter their respective Sign Key on the UI otherwise transaction will fail.
+
+
+### Transfer urTokens
+
+**_Definition:_** urTokens can be transfered if-and-only-if the user enters their respective Sign Key. urTokens can be permissionlessly transfered by the legit owners at any time and without restrictions. 
+
+The ur369.eth protocol does not charge a fee for this operation, only the gas fee must be paid by the users to validators of the respective chain.
 
 **_Procedure_**
 
@@ -107,48 +141,40 @@ In essence, the system charges the benefaction-fee when protecting tokens; but n
 - Enter recipient address
 - Input respective Sign Key
 - Click 'Transfer' button and confirm the transaction on the wallet
+- When the transaction is confirmed onchain the UI shows the amount of urTokens being transferred
+- The UI provides a hyperlink for the user to review the transaction details on the block explorer
 
 
 ### Decentralized Unprotection of Native Tokens (Claim)
 
-**_Description:_** Unprotecting native tokens from the ur369 smart contract to receive native tokens back into your wallet. This operation is executed by burning urTokens and automatically receiving native tokens at 1:1 ratio back into your wallet.
+**_Description:_** urTokens can be transfered if-and-only-if the user enters their respective Sign Key.
+
+Unprotecting native is claiming the tokens from the ur369 smart contract to receive the native tokens back into the user's wallet. This operation is executed by burning urTokens and automatically receiving native tokens at 1:1 ratio back into the user's wallet. 
+
+The ur369.eth protocol does not charge a fee for this operation, only the gas fee must be paid by the user to validators of the respective chain.
 
 **_Procedure_**
 
-- Click on "Claim" button corresponding to tne respective urToken field
+- Click on "Claim" button corresponding to tne respective urToken
 - Enter desired amount to unprotect
-- Enter the respective Sign Key and click on 'Unprotect' button
-- Smart contract will burn entered amount of urTokens and the respective native tokens will be transferred back into the user's wallet at 1:1 ratio
+- Smart contract will show the amount of urTokens that will be burned and the amount of native tokens to be received into the user's wallet
+- Enter the respective Sign Key, click 'Unprotect' button and confirm transaction on the wallet
+- Smart contract burns entered amount of urTokens and the respective native tokens will be transferred back into the user's wallet at 1:1 ratio
+- When the transaction is confirmed onchain, the UI shows the amount of urTokens burned and the amount of native tokens received
+- UI provides the user with a hyperlink for the user to review the transaction details on the block explorer 
 - The user can unprotect (claim) native tokens at any time and without restrictions
-  
-
-### Awward System
-
-**_Description:_** Upon start of each time period, a random participant address will be selected which will receive an award from the collected % of previous received benefaction-fees and from awards non-collected by users in previous rounds / time periods. 
-
-*_If the system is being used and there are funds within the respective addresses to distribute awards >> the awards shall arrive to the randomly selected ones._*
-
-**_Procedure_**
-
-- Smart contract collects benefaction-fee and send 30% of benefaction fee to urgift.eth (award address) and send 30% to ur-impact.eth
-- Each detail will be shown on the 'Award' page regarding collectable assets
-- The randomly selected participant's address will be shown in the Awards page
-- Smart contract will transfer all the collected benefaction-fee to the respective addresses urgift.eth (award address) and send 30% to ur-impact.eth and here stops/end the code functionality
-
-- Note: The rest of the procedure with respect of 'Awards' is outside of the code's scope and is bound to a game theoretical approach that can be seen in the 'Award' page ('Gift Pool' and "Stateless Pool' stated conditions) >> those transactions to send awards are performed manually (the reason for this approach can be found in the ur369.eth.limo UI (Insight page -- point (14)). The transparent nature of the blockchain(s) where urTokens are deployed will attest for the fullfilment of these manual transactions.
 
 
 ### Whitelist Mechanism
 
-**Definition:** Whitelist users can enter the Sign Key to perform a transaction (send urToken) from UI. Whitelisted smart contract(s) does not have to input Sign Key to transfer urTokens. 
+**Definition:** The user can enter the Sign Key on the UI to perform any transaction with urTokens. However, Whitelisted smart contract(s) will not have to input the respective Sign Key to internally or externally transfer urTokens. 
 
 **Implementation Guide:**
-Implementation can be usderstand in two ways.
 
-Sender is Uniswap or AAVE (Uniswap is whitelisted):
+Foor example, the sender is Uniswap or AAVE (Uniswap is actually whitelisted on the Ethereum mainnet):
    The system checks if the sender is a whitelisted contract address, and then the system allows for it to transfer urTokens without having to input Sign Key.
 
-**Strategy to Implement Whitelist Functinality:**
+**Strategy to Implement Whitelist Functionality:**
 There are two ways to check that caller is a contract address or not:
 
 - if(msg.sender == tx.origin): in case of true, caller is EOA otherwise caller is a contract.
@@ -156,11 +182,6 @@ There are two ways to check that caller is a contract address or not:
 - **_Note:_**
   1. Any of above can be used to check whether caller is an EOA or a contract.
   2. isContract() function of Address Library is deprecated due to security reasons.
-
-
-### Sign Key to perform transactions
-
-**_Description:_** To prevent users from transferring urTokens directly from any wallet, the feature has been implemented. On each user operation involving urTokens 'Transfer' or 'Claim' >> the user must enter their respective Sign Key on the UI otherwise transaction will fail.
 
 
 ### Master Key as Recovery Mechanism
@@ -178,7 +199,11 @@ There are two ways to check that caller is a contract address or not:
 
 ### Important note
 
-In the beginning and even before allocating funds into the contract, you can use the same procedure as above to confirm that your Sign Key has been transcribed correctly. Becaue when you apply those steps and you see the outcome 'The field "Reset Sign Key" to input and confirm new Sign Key should display for you', that means that you have transcribed your Master Key Correctly and you can allocate funds with 100% confidence into the contract. Keep the Master Key a;ways in a safe place (preferably offline).
+In the beginning and even before allocating funds into the contract, the user can use the same procedure as described above to confirm that their Sign Key has been exported from online to offline correctly. 
+
+When these steps are applied and the user can see: The field 'Reset Sign Key' to input and confirm new Sign Key, that means the Master Key has been transcribed without any misspellings and the user can allocate funds with 100% confidence into the contract.
+
+The Master Key must always be kept in a safe place (preferably offline).
 
 
 ### Quantum Resistant Approach
@@ -228,6 +253,4 @@ The Keccak-256 hash provides backend-level protection, safeguarding the Master K
 ### Frontend-Backend Connection Verification: 
 
 Works for both Classic and Quantum Protection, thus by requiring the Sign Key and/or the Quantum Resistant Sign Key (when enabled) to sign >> unauthorized direct access is prevented, ensuring that only onchain-verified-users can interact with the application.
-
-Note: Onchain-verified users does not relate nor indicates KYC (Know Your Customer); the onchain-verification, in this context, means the users having created their Sign Key and/or their Quantum Resistant Sign Key (optional).
 
