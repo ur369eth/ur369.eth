@@ -24,7 +24,7 @@ On the other side of the coin, it is a mechanism design in wich, without having 
 
 On the edge of the coin, it is a self-organizing distributive-system as in the process of protecting the native tokens plus issuing-and-sending urTokens (ultra resistant Tokens) to the user's wallet >> the system shows (upfront) to the user the benefaction-fee for the service provided:
 
-(i) A one time flat fee of $3.69 per address -collected in crypto- and only collected if the user opts for the Quantum Resistant Key.
+(i) A one time flat fee of $3.69 per address -collected in crypto- and only charged if the user opts for the Quantum Resistant Key.
 
 (ii) And a 0.369% of the amount being protected -collected each time the user allocates funds within the contract-.
 
