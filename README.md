@@ -218,6 +218,7 @@ The Master Key must always be kept in a safe place (preferably offline).
 
 ### Quantum Resistant Approach
 
+
 **_Overview_**
 
 With the advancements in quantum computing, traditional cryptographic approaches are becoming increasingly vulnerable. To future-proof the ecosystem, the Dilithium-Crystals quantum-resistant algorithm is used.
