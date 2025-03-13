@@ -10,7 +10,9 @@ Description of working of Smart Contract is as follows:
 - Fee Collection System (Benefaction-fee)
 - Award System
 - Whitelist Mechanism
-- Sign Key and Recovery Phrase Mechanism to perform any action (to check later)
+- Sign Key to Perform User Operations (transactions)
+- Master Key as Recovery Mechanism
+- Quantum Resistant Approach
 
 ### Decentralized Protection of Native Tokens
 
@@ -90,10 +92,12 @@ On the edge of the coin: A self-organizing distributive system as in the process
 - Enter the respective Sign Key and click on 'Unprotect' button
 - Smart contract will burn entered amount of urTokens and the respective native tokens will be transferred back into the user's wallet at 1:1 ratio
 - The user can unprotect (claim) native tokens at any time and without restrictions
+  
 
 ### Benefaction-Fee Collection System
 
 **_Description:_** Each time a user protects/allocates native tokens within the contract, a specific and fix percentage (0.369%) will be deducted from the entered amount >> converted into urToken and sistributed across the system to fulfill a purpose. The remaining amount of native tokens will be safeguarded within the contract and the respective 1:1 ratio is minted and sent into the user's account.
+
 
 **_Fee Collectors_**
 
@@ -105,6 +109,7 @@ On the edge of the coin: A self-organizing distributive system as in the process
    **_Procedure_**
 
 - Fee will be deducted at time time of protecting native tokens.
+  
 
 ### Awward System
 
