@@ -4,86 +4,133 @@ Description of working of Smart Contract is as follows:
 
 ## Functionalities
 
-- Wrapping Tokens or Coins
-- Unwrapping Tokens or Coins
+- Decentralized Protection of Native Tokens
+- Decentralized Unprotection of Native Tokens
 - Transfer urTokens
-- Fee Collection System
-- Reward System
+- Fee Collection System (Benefaction-fee)
+- Award System
 - Whitelist Mechanism
-- Password and Recovery Phrase Mechanism to perform any action
+- Sign Key and Recovery Phrase Mechanism to perform any action (to check later)
 
-### Wrapping Tokens and Coins
+### Decentralized Protection of Native Tokens
 
-**_Definition:_** Locking Tokens or Coins and receiving urToken(s) which is/are equal in numbers to respective tokens or coins. For example: user want to wrap 10 USDT, he will enter 10 USDT and our smart contract will take 10 USDT from user and mint 10 uUSDT tokens in account of user.
+**_Definition:_** On one side of the coin: A SingleSig or independent onchain 2FA that abstrcats away the private Keys for signing transactions by allowing the user to receive an encrypted Master Key and set a Sign Key (pairing it with the Master Key onchain) in order for the tokens to be able to be transferred. 
 
-**_Procedure_**
+On the other side of the coin: A mechanism design in wich, without having a centralized custody of the tokens, the system accepts deposits of approved tokens to isolate/remove said token from circulation and keep it *safeguarded from theft and quantum threats within the ur369.eth smart contract*, while simultaneously, upon receiving native tokens the system automatically issues urTokens (ultra resistant Tokens) at 1:1 ratio to the user's wallet in regards of the protected tokens. 
 
-- Enter desired amount to be wrapped
-- System will check that this is new user or not. In case of new user system will ask him to create a password and he will be provided at time a recovery phrase which will be only shown once and will be used by the user to recover his password in case of forgot password. In case of already registered user, system will just only show the form to take user desired amount of token or coin to be wrapped.
-- Smart contract will save user password and recovery phrase.
-- Smart contract will mint amount of respective urTokens in account of user.
-- User can come and unwrap it any time.
-
-### Un-Wrapping Tokens and Coins
-
-**_Definition:_** Unlocking Tokens or Coins and receiving Token(s) or coin(s) back. For example: user want to unwrap 10 uUSDT, he will enter 10 uUSDT and our smart contract will burn 10 uUSDT and return 10 USDT to the user.
+On the edge of the coin: A self-organizing distributive system as in the process for protecting the native tokens and issue the urTokens, the system shows (upfront) to the user a benefaction-fee for the service (i.e., a 0.369% of the amount to be deposited/protected) from which, if the user consents and pays the service-fee to protect their tokens, then the system automatically allocates the funds (the 0.369% benefaction-fee) into 4 addresses to (A) fund public goods, (B) award end-users every 369 hours, (C) support the Community and Developers Benefit Fund, and (D) self-sustain as a social good cause.
 
 **_Procedure_**
 
-- Enter desired amount to be unwrapped
-- Smart contract will burn amount of respective urTokens from account of user.
-- Respective tokens or coins will be transferred back to the user.
+- The user goes to dashboard and clicks on "Protect" button.
+  
+- The system will check if this is new user/address or not. In case of an already registered user/address the system just shows the form for the user to allocate the desired amount of native tokens into the contract to be protected.
+
+- In case of new user/address the system will randomly generate an encrypted Master Key for the user (only shown once on that section and during that time) and will prompt the user to set a Sign Key or a Quantum Resistant Sign Key (optional). 
+
+- The Master Key will be used to (A) recover the user's Sign Key in case it is lost or forgotten and (B) for the user to add Quantum Key (in case the user did not add it in the first instance and wanted to add it later).
+
+- Therefore, previous to jumping into setting a Sign Key, the system clearly indicates to the user a step-by-step guide to safely export the provided and encrypted Master Key from online to offline with: (A) near zero chances of misspelling it (as the Master Key is comprised of seperators, placed every 5 characters, to facilitate its clear reading and transcription) and (B) lowering the posibility for the Master Key to be remotely viewed or detected by a possible/potential bad actor as the system, before displaying the Master Key on the screen: (i) advises the user to have the internet off, and (ii) the system also alerts to never take a picture or screenshot of the Master Key or private keys.
+    
+- **_Instructions to safely export the Master Key from online to offline (the 8 steps below are out of the scope of the code - however, included here as they can help to fully understand the rationale):_**
+  
+- *_(1) Turn off the Wi-Fi / Internet connection_*
+- *_(2) Check the box to acknowledge the WiFi/internet is off - as only after the user acknowledges the internet is off is when the user can click a button/icon to make the Master Key visible_*
+- *_(3) The system indicates the user to write the Master Key on a piece of paper (temporarily); and instructs that the optimal way to store the Master Key (as well as private Keys) is a solid, stainless, acid-resistant, shockproof, and fireproof metal_*
+- *_(4) Double/triple check for any misspelling(s)_*
+- *_(5) Click button/icon to show Master Key encrypted again_*
+- *_(6) Turn on the Wi-Fi_*
+- *_(7) Check the box(es) 'Add Quantum Resistant Protection (Optional)' and 'I understand ur369.eth cannot recover the Sign Key for me'_*
+- *-(8) The user sets Sign Key (a strong password or PIN that the user selects on their end to abstract away the private keys and protect tokens from theft) or the user sets a Quantum Resistant Sign Key (a strong password or PIN that the user selects on their end -- for this option the system incorporates a Dilithium Crystrals Algorithim) to abstract away the private keys and protect tokens from quantum threats*
+  
+- ## Code functionality resumes and continues on the next step
+  
+- In regards to point 8 above >> only after the user has acknowledged and checked the respective boxes 'Add Quantum Resistant Protection (optional)' and 'I understand ur369.eth cannot recover the Sign Key for me' is that the user can continue to 'Set Sign Key' and click on 'Enable Sign Key'.
+
+- After clicking 'Enable Sign Key' the user signs the transaction on their wallet. When the transaction is confirmed onchain the system pairs and saves the Master Key and the Sign Key.
+
+- The UI shows a pop-up for the user showing they have enabled Sign Key or Quantum Resistant Sign Key and provides a hyperlink for the user to see the transaction on the block explorer.
+
+- On the block explorer the user can see the onchain call function 'Set Master Key And Sign Key' if classical Sign Key was enabled; or 'Set Master Key And Quantum Resistant Sign Key' if the Quantum Resistant Key was the one selected.
+
+- When the user comes back to the UI and closes the pop-up with previous transaction re enabling Sign Key, the UI presents a modal to enter desired amount of native tokens to be protected.
+
+- The user inputs the amount of native tokens they want to protect/allocate into the contract, the UI shows the benefaction-fee of 0.369% that the user must pay in order to execute the operation. The UI shows the amount of urTokens (ultra resistant Tokens) the user will receive; for example, if the user is allocating ETH the user will receive urETH at 1:1 ratio after the benefaction-fee.
+
+- If all ok on the user's end, the user inputs their Sign Key and confirms the transaction on their wallet.
+
+- After the Tx is confirmed, the UI shows the amount of native tokens protected (allocated into the contract), the benefaction-fee amount the user paid to the contract, the amount of urTokens the contract issued and sent to the user's account. The UI also provides the user with a hyperlink for them to see and inspect the transaction details on the block explorer.
+
+- On the block explorer the user can see all details as stated above and also how the benefaction fee they paid was distributed into 4 addresses ((1)urgift / (2)ur-impact / (3)ur369 / (4)ur-community & devs benefit fund).
+
+- Once protected, the user can unportect and withdraw the native tokens at anytime and without restrictions. For this the user only has to click on 'Claim' button and proceed to burn the desired amount of urTokens and they automatically receive the native tokens into their wallet.
+  
 
 ### Transferring urTokens
 
-**_Description:_** Any time user can transfer urTokens to anyone with some restrictions explained in the procedure section.
+**_Definition:_** urTokens can be transfered if-and-only-if the user enters their respective Sign Key. Protected tokens can be permissionlessly transfered by the legit owners at any time and without restrictions.
 
 **_Procedure_**
 
-- Select urToken and click on transfer button.
-- Enter recipient address and amount.
-- Enter password Click on transfer button.
-- Smart contract will transfer urTokens from sender to recipient.
-- Now recipient can come to UI and transfer or unwrap any time.
+- Click on "Transfer" button corresponding to tne respective urToken field
+- Enter the amount of urTokens to transfer
+- Enter recipient address
+- Input respective Sign Key
+- Click 'Transfer' button and confirm the Tx on the wallet
 
-### Fee Collection System
 
-**_Description:_** Each time user wrap tokens or coins, a specific percentage (0.369%) will be deducted from the entered amount and remaining amount will be wrapped.
+### Unprotecting (claiming) Native Tokens
+
+**_Description:_** Unprotecting native tokens from the ur369 smart contract to receive native tokens back into your wallet. This operation is executed by burning urTokens and automatically receiving native tokens at 1:1 ratio back into your wallet.
+
+**_Procedure_**
+
+- Click on "Claim" button corresponding to tne respective urToken field
+- Enter desired amount to unprotect
+- Enter the respective Sign Key and click on 'Unprotect' button
+- Smart contract will burn entered amount of urTokens and the respective native tokens will be transferred back into the user's wallet at 1:1 ratio
+- The user can unprotect (claim) native tokens at any time and without restrictions
+
+### Benefaction-Fee Collection System
+
+**_Description:_** Each time a user protects/allocates native tokens within the contract, a specific and fix percentage (0.369%) will be deducted from the entered amount >> converted into urToken and sistributed across the system to fulfill a purpose. The remaining amount of native tokens will be safeguarded within the contract and the respective 1:1 ratio is minted and sent into the user's account.
 
 **_Fee Collectors_**
 
-1. 30% of 0.369% will be transferred to the reward distributor address which will send reward to the winner later.
-2. 30% of 0.369% will be transferred to the charity address.
-3. 30% of 0.369% will be transferred to the fund address.
-4. 10% of 0.369% will be transferred to the programmers address.
+1. 30% of 0.369% will be transferred to the urgift.eth address which will send awards to randomly selected participants every 369 hours 
+2. 30% of 0.369% will be transferred to the ur-impact.eth to fund public goods and other important causes for the ecosystem
+3. 30% of 0.369% will be transferred to the ur369.eth address to self-sustain the social good
+4. 10% of 0.369% will be transferred to the ur369community-devs.eth address to support the ur369.eth Community & Developers Benefit Fund
 
    **_Procedure_**
 
-- Fee will be deducted at time time of wrapping.
+- Fee will be deducted at time time of protecting native tokens.
 
-### Reward System
+### Awward System
 
-**_Description:_** Upon start of each time period, a winner will be selected which will receive all the reward collected in previous non-collected time periods.
+**_Description:_** Upon start of each time period, a random participant address will be selected which will receive an award from the collected % of previous received benefaction-fees and from awards non-collected by users in previous rounds / time periods. 
+
+*_If the system is being used and there are funds within the respective addresses to distribute awards >> the awards shall arrive to the randomly selected ones._*
 
 **_Procedure_**
 
-- There will be specific time period to collect reward for each time period.
-- Each detail will be shown on the UI regarding collectable assets.
-- User have to click within reward time limit on the button.
-- Smart contract will transfer all the reward collected within previous un-collected time periods.
+- Smart contract collects benefaction-fee and send 30% of benefaction fee to urgift.eth (award address) and send 30% to ur-impact.eth
+- Each detail will be shown on the 'Award' page regarding collectable assets
+- The randomly selected participant's address will be shown in the Awards page
+- Smart contract will transfer all the collected benefaction-fee to the respective addresses urgift.eth (award address) and send 30% to ur-impact.eth and here stops/end the code functionality
+
+- Note: The rest of the procedure with respect of 'Awards' is outside of the code's scope and is bound to a game theoretical approach that can be seen in the 'Award' page ('Gift Pool' and "Stateless Pool' stated conditions) >> those transactions to send awards are performed manually (the reason for this approach can be found in the ur369.eth.limo UI (Insight page -- point (14)). The transparent nature of the blockchain(s) where urTokens are deployed will attest for the fullfilment of these manual transactions.
+
 
 ### Whitelist Mechanism
 
-**Definition:** Whitelist users dosn't need to enter password or to perform a transaction from UI for transferring funds.
+**Definition:** Whitelist users can enter the Sign Key to perform a transaction (send urToken) from UI. Whitelisted smart contract(s) does not have to input Sign Key to transfer urTokens. 
 
 **Implementation Guide:**
 Implementation can be usderstand in two ways.
 
-1. Sender is EOA:
-   We will not implement that one as for any/all EOA user will have to input their password and as you said >> In the first case, all addresses will be required to enter password. ✅
-
-2. Sender is Uniswap or AAVE:
-   In the second case, we will check if the sender is a contract address, and then we will allow it to transfer urTokens without any password. ✅
+Sender is Uniswap or AAVE (Uniswap is whitelisted):
+   The system checks if the sender is a whitelisted contract address, and then the system allows for it to transfer urTokens without having to input Sign Key.
 
 **Strategy to Implement Whitelist Functinality:**
 There are two ways to check that caller is a contract address or not:
@@ -94,7 +141,77 @@ There are two ways to check that caller is a contract address or not:
   1. Any of above can be used to check whether caller is an EOA or a contract.
   2. isContract() function of Address Library is deprecated due to security reasons.
 
-### Password and Recovery Phrase Mechanism to perform any action
 
-**_Description:_** To prevent users from transferring funds directly from metamask, we have implemented this feature. On each unwrap or transfer user must have to enter password and must have to come our UI otherwise transaction will be failed.
-In case of forgot password, we have implemented a mechanism which will implement recovery phrase functionality. If user want to change his password or forgot his password, then recovery phrase will be used
+### Sign Key to perform transactions
+
+**_Description:_** To prevent users from transferring urTokens directly from any wallet, the feature has been implemented. On each user operation involving urTokens 'Transfer' or 'Claim' >> the user must have to enter their respective Sign Key on the UI otherwise transaction will fail.
+
+
+### Master Key as Recovery Mechanism
+
+**_Description:_** If the user forgot or lost the Sign Key, the user can come to the UI, input their Master Key and reset the Sign Key. 
+
+**_Procedure_**
+
+- Click on "Forgot Sign key"
+- Turn off any Wi-Fi / internet connection
+- *With the internet off* input the Master Key into the respective field: include all the separators ( - ) *up to the last dash/separator* and leave no spaces in between the dashes and the letters/characters, it shall all look as a string of dots -encrypted-
+- *Important: make sure you leave out (do not type) the last 4 characters.*
+- Turn the internet ON and with the cursor at the very end of the Master Key >> input the last 4 characters of the Master Key and click enter
+- The field "Reset Sign Key" to input and confirm new Sign Key should display for you
+
+### Important note
+
+In the beginning and even before allocating funds into the contract, you can use the same procedure as above to confirm that your Sign Key has been transcribed correctly. Becaue when you apply those steps and you see the outcome 'The field "Reset Sign Key" to input and confirm new Sign Key should display for you', that means that you have transcribed your Master Key Correctly and you can allocate funds with 100% confidence into the contract. Keep the Master Key a;ways in a safe place (preferably offline).
+
+
+### Quantum Resistant Approach
+
+**_Overview_**
+
+With the advancements in quantum computing, traditional cryptographic approaches are becoming increasingly vulnerable. To future-proof the ecosystem, the Dilithium-Crystals quantum-resistant algorithm is used.
+
+**_Implementation Flow_**
+
+### Hashing with Keccak-256
+
+First the Master Key and the Sign Key are hashed with Keccak-256, a reliable algorithm widely used in blockchain, to add another layer of security.
+
+### Applying Quantum-Resistant Signature (Dilithium-Crystals)
+
+Upon enabling the Master Key and Sign Key, a Dilithium-Crystals signature is generated, ensuring a high level of quantum security. This signature, together with the public key, is stored on the blockchain, creating a secure reference point for future verification.
+
+### Signing with the crypto wallet Private Key
+
+The Keccak-256 hash is signed using the user’s wallet private keys, which authenticates the transaction on the blockchain and adds an extra verification layer.
+
+### Storing Data on Blockchain
+
+The Dilithium-Crystals signature, public key, Keccak-256 hash, and the wallet signature are securely stored on the blockchain. To ensure authenticity, the Wallet signature is verified using the ecrecover function, validating the signature against the user’s address.
+
+### Sign Verification Process
+
+To sign, the user enters their Sign key, and the Keccak-256 hash is regenerated. This hash is then compared against the stored data on the blockchain. A new Wallet signature is created and verified on-chain.
+
+### Rationale for selecting Dilithium-Crystals among other NIST-recommended algorithms
+
+NIST recommends multiple quantum-resistant algorithms, including SPHINCS+, Rainbow, Dilithium-Crystals etc. Here’s why it has been selected: Dilithium-Crystals offers efficient storage, consistent key generation, and resilient security against both classical and quantum attacks.
+
+### Multi-Layered Security
+
+To maximize security, ur369.eth implements three distinct layers of protection:
+
+### Front-End Quantum-Resistant Signature: 
+
+Dilithium-Crystals applied on the front end ensures protection against quantum threats.
+
+### Backend Keccak Hash: 
+
+The Keccak-256 hash provides backend-level protection, safeguarding the Master Key and the Sign Key on-chain.
+
+### Frontend-Backend Connection Verification: 
+
+Works for both Classic and Quantum Protection, thus by requiring the Sign Key and/or the Quantum Resistant Sign Key (when enabled) to sign >> unauthorized direct access is prevented, ensuring that only onchain-verified-users can interact with the application.
+
+Note: Onchain-verified users does not relate nor indicates KYC (Know Your Customer); the onchain-verification, in this context, means the users having created their Sign Key and/or their Quantum Resistant Sign Key (optional).
+
