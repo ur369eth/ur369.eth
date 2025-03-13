@@ -16,13 +16,13 @@ Description of working of Smart Contract is as follows:
 
 ### Decentralized Protection of Native Tokens
 
-**_Definition:_** On one side of the coin, it is an independent onchain 2FA (with extra functionalities). The main objective is to help prevent crypto theft from bad actors infesting the ecosystem with constant phishing attacks, wallet drainers and other sophisticated exploits (including potential quantum threats).
+**_Definition:_** On one side of the coin, it is an independent onchain 2FA (with extra functionalities). The main objective is to help prevent (and stop in full) crypto theft caused by bad actors infesting the ecosystem with constant phishing attacks, wallet drainers and other sophisticated exploits (see Bybit hack). The scope of the protection includes *potential quantum threats* (prevented by incorporating Dilithium-Crystals into the security scheme).
 
 It works by abstracting away the wallet's private keys to sign transactions and allowing the user to set their own (A) Classical Sign Key or (B) Quantum Resistant Sign Key (optional).
 
 On the other side of the coin, it is a mechanism design in wich, without having a centralized custody of the tokens, the system accepts deposits of approved native tokens to isolate/remove said native tokens from circulation to keep them *safeguarded from theft and protected from quantum threats within the ur369.eth smart contract*, while simultaneously, upon receiving native tokens, the system mints urTokens (ultra resistant Tokens) and automatically sends urTokens to the user's wallet at 1:1 ratio in regards of the protected native tokens. 
 
-On the edge of the coin, it is a self-organizing distributive-system as in the process of protecting the native tokens plus issuing-and-sending urTokens (ultra resistant Tokens) to the user's wallet >> the system shows (upfront) to the user a benefaction-fee for the service provided (i.e., a fix 0.369% of the amount to be deposited/protected) from which, if the user consents and pays the service-fee to protect their tokens, then the system, programmatically sistributes the funds (the 0.369% benefaction-fee) into 4 addresses to (A) fund public goods, (B) award end-users every 369 hours, (C) support the Community and Developers Benefit Fund, and (D) self-sustain as a social good cause.
+On the edge of the coin, it is a self-organizing distributive-system as in the process of protecting the native tokens plus issuing-and-sending urTokens (ultra resistant Tokens) to the user's wallet >> the system shows (upfront) to the user a benefaction-fee for the service provided (i.e., a fix 0.369% of the amount to be deposited/protected) from which, if the user consents and pays the service-fee to protect their native tokens, then the system programmatically distributes the 0.369% benefaction-fee into 4 addresses as follows (A) 30% to fund public goods (so far on payroll Giveth, Gitcoin and the Giving Block), (B) 30% to award randomly selected end-users every 369 hours, (C) 30% to self-sustain the social good protocol (ur369.eth) and (D) 10% to support the Community and Developers Benefit Fund.
 
 **_Procedure_**
 
