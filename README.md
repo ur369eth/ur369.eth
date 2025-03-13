@@ -16,9 +16,9 @@ Description of working of Smart Contract is as follows:
 
 ### Decentralized Protection of Native Tokens
 
-**_Definition:_** On one side of the coin: A SingleSig or independent onchain 2FA that abstrcats away the private Keys for signing transactions by allowing the user to receive an encrypted Master Key and set a Sign Key (pairing it with the Master Key onchain) in order for the tokens to be able to be transferred. 
+**_Definition:_** On one side of the coin: A SingleSig or independent onchain 2FA that abstracts away the wallet's private Keys for signing transactions by allowing the user to receive an encrypted Master Key and set a Sign Key (pairing it with the Master Key onchain) in order for the tokens to be able to be transferred. 
 
-On the other side of the coin: A mechanism design in wich, without having a centralized custody of the tokens, the system accepts deposits of approved tokens to isolate/remove said token from circulation and keep it *safeguarded from theft and quantum threats within the ur369.eth smart contract*, while simultaneously, upon receiving native tokens the system automatically issues urTokens (ultra resistant Tokens) at 1:1 ratio to the user's wallet in regards of the protected tokens. 
+On the other side of the coin: A mechanism design in wich, without having a centralized custody of the tokens, the system accepts deposits of approved tokens to isolate/remove said token from circulation and keep it *safeguarded from theft and protected from quantum threats within the ur369.eth smart contract*, while simultaneously, upon receiving native tokens the system automatically issues urTokens (ultra resistant Tokens) at 1:1 ratio to the user's wallet in regards of the protected tokens. 
 
 On the edge of the coin: A self-organizing distributive system as in the process for protecting the native tokens and issue the urTokens, the system shows (upfront) to the user a benefaction-fee for the service (i.e., a 0.369% of the amount to be deposited/protected) from which, if the user consents and pays the service-fee to protect their tokens, then the system automatically allocates the funds (the 0.369% benefaction-fee) into 4 addresses to (A) fund public goods, (B) award end-users every 369 hours, (C) support the Community and Developers Benefit Fund, and (D) self-sustain as a social good cause.
 
@@ -149,7 +149,7 @@ There are two ways to check that caller is a contract address or not:
 
 ### Sign Key to perform transactions
 
-**_Description:_** To prevent users from transferring urTokens directly from any wallet, the feature has been implemented. On each user operation involving urTokens 'Transfer' or 'Claim' >> the user must have to enter their respective Sign Key on the UI otherwise transaction will fail.
+**_Description:_** To prevent users from transferring urTokens directly from any wallet, the feature has been implemented. On each user operation involving urTokens 'Transfer' or 'Claim' >> the user must enter their respective Sign Key on the UI otherwise transaction will fail.
 
 
 ### Master Key as Recovery Mechanism
