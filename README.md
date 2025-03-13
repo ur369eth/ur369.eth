@@ -10,7 +10,7 @@ Description of working of Smart Contract is as follows:
 - Sign Key to Perform User Operations (Transactions)
 - Transfer urTokens (ultra resistant Tokens)
 - Decentralized Unprotection of Native Tokens (Claim)
-- Whitelist Mechanism
+- Whitelist Mechanism for Smart Contracts (Interop)
 - Master Key as Recovery Mechanism
 - Quantum Resistant Approach
 
@@ -175,7 +175,7 @@ The ur369.eth protocol does not charge a fee for this operation, only the gas fe
 - The user can unprotect (claim) native tokens at any time and without restrictions
 
 
-### Whitelist Mechanism
+### Whitelist Mechanism for Smart Contracts (Interop)
 
 **Definition:** The user can enter the Sign Key on the UI to perform any transaction with urTokens. However, whitelisted smart contract(s) will not have to input the respective Sign Key to internally or externally transfer urTokens. 
 
