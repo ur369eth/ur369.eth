@@ -40,9 +40,13 @@ If the user consents and pays the fee to protect their native tokens, then when 
 
 - The Master Key will be used to (A) recover the user's Sign Key in case it is lost or forgotten and (B) for the user to add Quantum Key (in case the user did not add it in the first instance and wanted to add it later).
 
-- Therefore, previous to jumping into setting the Sign Key, the system clearly indicates to the user a step-by-step guide to safely export the provided and encrypted Master Key from online to offline with: (A) near zero chances of misspelling it (as the Master Key is comprised of seperators, placed every 5 characters, to facilitate its clear reading and transcription) and (B) lowering the posibility for the Master Key to be remotely viewed or detected by a possible/potential bad actor as the system, before displaying the Master Key on the screen: (i) advises the user to have the internet off, and (ii) the system also alerts to never take a picture or screenshot of the Master Key or private keys (iii) the system does not provide a "copy" Master Key button in the UI, thus inducing the user to export the Master Key by writing it offline as to "copy" it could carry a risk vector.
+- Therefore, previous to jumping into setting the Sign Key, the system clearly indicates to the user a step-by-step guide to safely export the provided and encrypted Master Key from online to offline with: (A) near zero chances of misspelling it (as the Master Key is comprised of seperators, placed every 5 characters, to facilitate its clear reading and transcription) and (B) lowering the posibility for the Master Key to be remotely viewed or detected by a possible/potential bad actor as the system, before displaying the Master Key on the screen:
+
+- (i) Strongly recommends the user to have the internet off
+- (ii) On purpuse, the system does not provide a "copy Master Key button" in the UI, thus inducing the user to export the Master Key by writing it offline instead of copying it as that practice could carry a risk vector, and
+- (iii) The system also alerts to never take a picture or screenshot of the Master Key or private keys
     
-- **_Instructions to safely export the Master Key from online to offline (the 8 steps below are out of the scope of the code - however, these are included here as they can help anyone to fully understand the hollistic approach to best parctice in Crypto Security and the overall rationale):_**
+- **_Instructions to safely export the Master Key from online to offline (the 8 steps below are out of the scope of the code - however, these are included here in order to assist with the full understanding of the hollistic approach about best parctice in Crypto Security and the overall rationale):_**
   
 - *_(1) Turn off the Wi-Fi / Internet connection_*
 - *_(2) Check the box to acknowledge the WiFi/internet is off - as only after the user acknowledges the internet is off is when the user can click a button/icon to make the Master Key visible_*
