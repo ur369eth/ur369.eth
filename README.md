@@ -6,7 +6,7 @@ Description of working of Smart Contract is as follows:
 
 - Decentralized Protection of Native Tokens
 - Decentralized Unprotection of Native Tokens
-- Transfer urTokens
+- Transfer urTokens (ultra resistant Tokens)
 - Fee Collection System (Benefaction-fee)
 - Award System
 - Whitelist Mechanism
@@ -16,31 +16,33 @@ Description of working of Smart Contract is as follows:
 
 ### Decentralized Protection of Native Tokens
 
-**_Definition:_** On one side of the coin: A SingleSig or independent onchain 2FA that abstracts away the wallet's private Keys for signing transactions by allowing the user to receive an encrypted Master Key and set a Sign Key (pairing it with the Master Key onchain) in order for the tokens to be able to be transferred. 
+**_Definition:_** On one side of the coin, it is an independent onchain 2FA (with extra functionalities). The main objective is to help prevent crypto theft from bad actors infesting the ecosystem with constant phishing attacks, wallet drainers and other sophisticated exploits (including potential quantum threats).
 
-On the other side of the coin: A mechanism design in wich, without having a centralized custody of the tokens, the system accepts deposits of approved tokens to isolate/remove said token from circulation and keep it *safeguarded from theft and protected from quantum threats within the ur369.eth smart contract*, while simultaneously, upon receiving native tokens the system automatically issues urTokens (ultra resistant Tokens) at 1:1 ratio to the user's wallet in regards of the protected tokens. 
+It works by abstracting away the wallet's private keys to sign transactions and allowing the user to set their own (A) Classical Sign Key or (B) Quantum Resistant Sign Key (optional).
 
-On the edge of the coin: A self-organizing distributive system as in the process for protecting the native tokens and issue the urTokens, the system shows (upfront) to the user a benefaction-fee for the service (i.e., a 0.369% of the amount to be deposited/protected) from which, if the user consents and pays the service-fee to protect their tokens, then the system automatically allocates the funds (the 0.369% benefaction-fee) into 4 addresses to (A) fund public goods, (B) award end-users every 369 hours, (C) support the Community and Developers Benefit Fund, and (D) self-sustain as a social good cause.
+On the other side of the coin, it is a mechanism design in wich, without having a centralized custody of the tokens, the system accepts deposits of approved native tokens to isolate/remove said native tokens from circulation to keep them *safeguarded from theft and protected from quantum threats within the ur369.eth smart contract*, while simultaneously, upon receiving native tokens, the system mints urTokens (ultra resistant Tokens) and automatically sends urTokens to the user's wallet at 1:1 ratio in regards of the protected native tokens. 
+
+On the edge of the coin, it is a self-organizing distributive-system as in the process of protecting the native tokens plus issuing-and-sending urTokens (ultra resistant Tokens) to the user's wallet >> the system shows (upfront) to the user a benefaction-fee for the service provided (i.e., a fix 0.369% of the amount to be deposited/protected) from which, if the user consents and pays the service-fee to protect their tokens, then the system, programmatically sistributes the funds (the 0.369% benefaction-fee) into 4 addresses to (A) fund public goods, (B) award end-users every 369 hours, (C) support the Community and Developers Benefit Fund, and (D) self-sustain as a social good cause.
 
 **_Procedure_**
 
-- The user goes to dashboard and clicks on "Protect" button.
+- Once on the UI dashboard, the user clicks on the 'Protect' button corresponding to the native token they want to protect.
   
-- The system will check if this is new user/address or not. In case of an already registered user/address the system just shows the form for the user to allocate the desired amount of native tokens into the contract to be protected.
+- The system will check if this is a new user/address or not. In case of an already registered user/address the system just shows the form for the user to allocate the desired amount of native tokens into the contract to be protected.
 
 - In case of new user/address the system will randomly generate an encrypted Master Key for the user (only shown once on that section and during that time) and will prompt the user to set a Sign Key or a Quantum Resistant Sign Key (optional). 
 
 - The Master Key will be used to (A) recover the user's Sign Key in case it is lost or forgotten and (B) for the user to add Quantum Key (in case the user did not add it in the first instance and wanted to add it later).
 
-- Therefore, previous to jumping into setting a Sign Key, the system clearly indicates to the user a step-by-step guide to safely export the provided and encrypted Master Key from online to offline with: (A) near zero chances of misspelling it (as the Master Key is comprised of seperators, placed every 5 characters, to facilitate its clear reading and transcription) and (B) lowering the posibility for the Master Key to be remotely viewed or detected by a possible/potential bad actor as the system, before displaying the Master Key on the screen: (i) advises the user to have the internet off, and (ii) the system also alerts to never take a picture or screenshot of the Master Key or private keys.
+- Therefore, previous to jumping into setting the Sign Key, the system clearly indicates to the user a step-by-step guide to safely export the provided and encrypted Master Key from online to offline with: (A) near zero chances of misspelling it (as the Master Key is comprised of seperators, placed every 5 characters, to facilitate its clear reading and transcription) and (B) lowering the posibility for the Master Key to be remotely viewed or detected by a possible/potential bad actor as the system, before displaying the Master Key on the screen: (i) advises the user to have the internet off, and (ii) the system also alerts to never take a picture or screenshot of the Master Key or private keys.
     
-- **_Instructions to safely export the Master Key from online to offline (the 8 steps below are out of the scope of the code - however, included here as they can help to fully understand the rationale):_**
+- **_Instructions to safely export the Master Key from online to offline (the 8 steps below are out of the scope of the code - however, these are included here as they can help anyone to fully understand the hollistic approach to best parctice in Crypto Security and the overall rationale):_**
   
 - *_(1) Turn off the Wi-Fi / Internet connection_*
 - *_(2) Check the box to acknowledge the WiFi/internet is off - as only after the user acknowledges the internet is off is when the user can click a button/icon to make the Master Key visible_*
-- *_(3) The system indicates the user to write the Master Key on a piece of paper (temporarily); and instructs that the optimal way to store the Master Key (as well as private Keys) is a solid, stainless, acid-resistant, shockproof, and fireproof metal_*
+- *_(3) The system indicates the user to write the Master Key on a piece of paper (temporarily); and instructs that the optimal way to store the Master Key (as well as private Keys) is a solid, stainless, acid-resistant, shockproof, and fireproof piece of metal_*
 - *_(4) Double/triple check for any misspelling(s)_*
-- *_(5) Click button/icon to show Master Key encrypted again_*
+- *_(5) Click button/icon to show the Master Key encrypted again_*
 - *_(6) Turn on the Wi-Fi_*
 - *_(7) Check the box(es) 'Add Quantum Resistant Protection (Optional)' and 'I understand ur369.eth cannot recover the Sign Key for me'_*
 - *_(8) The user sets Sign Key (a strong password or PIN that the user selects on their end to abstract away the private keys and protect tokens from theft) or the user sets a Quantum Resistant Sign Key (a strong password or PIN that the user selects on their end -- for this option the system incorporates a Dilithium Crystrals Algorithim) to abstract away the private keys and protect tokens from quantum threats*
@@ -51,19 +53,19 @@ On the edge of the coin: A self-organizing distributive system as in the process
 
 - After clicking 'Enable Sign Key' the user signs the transaction on their wallet. When the transaction is confirmed onchain the system pairs and saves the Master Key and the Sign Key.
 
-- The UI shows a pop-up for the user showing they have enabled Sign Key or Quantum Resistant Sign Key and provides a hyperlink for the user to see the transaction on the block explorer.
+- The UI presents a pop-up for the user showing they have enabled Classical Sign Key or the Quantum Resistant Sign Key and provides the user with a hyperlink for them to see the transaction on the block explorer.
 
-- On the block explorer the user can see the onchain call function 'Set Master Key And Sign Key' if classical Sign Key was enabled; or 'Set Master Key And Quantum Resistant Sign Key' if the Quantum Resistant Key was the one selected.
+- On the block explorer the user can see the onchain call function 'Set Master Key And Sign Key' if classical Sign Key was enabled; or the user can see 'Set Master Key And Quantum Resistant Sign Key' if the Quantum Resistant Key was the option selected.
 
-- When the user comes back to the UI and closes the pop-up with previous transaction re enabling Sign Key, the UI presents a modal to enter desired amount of native tokens to be protected.
+- When the user comes back to the UI and closes the pop-up with previous transaction (re enabling Sign Key), the UI presents a modal to enter the desired amount of native tokens the user wants to protect.
 
-- The user inputs the amount of native tokens they want to protect/allocate into the contract, the UI shows the benefaction-fee of 0.369% that the user must pay in order to execute the operation. The UI shows the amount of urTokens (ultra resistant Tokens) the user will receive; for example, if the user is allocating ETH the user will receive urETH at 1:1 ratio after the benefaction-fee.
+- The user inputs the amount of native tokens they want to protect (allocate into the contract), the UI shows the benefaction-fee of 0.369% that the user must pay in order to execute the operation. The UI shows the amount of urTokens (ultra resistant Tokens) the user will receive; for example, if the user is allocating ETH the user will receive urETH at 1:1 ratio after the benefaction-fee.
 
-- If all ok on the user's end, the user inputs their Sign Key and confirms the transaction on their wallet.
+- If all is ok on the user's end, then the user inputs their Sign Key and confirms the transaction on their wallet.
 
-- After the Tx is confirmed, the UI shows the amount of native tokens protected (allocated into the contract), the benefaction-fee amount the user paid to the contract, the amount of urTokens the contract issued and sent to the user's account. The UI also provides the user with a hyperlink for them to see and inspect the transaction details on the block explorer.
+- After the transaction is confirmed, the UI shows the amount of native tokens protected (allocated within the contract), the benefaction-fee amount the user paid to the contract, the amount of urTokens the contract issued and sent to the user's account. The UI also provides the user with a hyperlink for them to see and inspect the transaction details on the block explorer.
 
-- On the block explorer the user can see all details as stated above and also how the benefaction fee they paid was distributed into 4 addresses ((1)urgift / (2)ur-impact / (3)ur369 / (4)ur-community & devs benefit fund).
+- On the block explorer the user can see all details as stated above and also how the benefaction fee they paid was automatically distributed into 4 addresses ((1)urgift / (2)ur-impact / (3)ur369 / (4)ur-community & devs benefit fund).
 
 - Once protected, the user can unportect and withdraw the native tokens at anytime and without restrictions. For this the user only has to click on 'Claim' button and proceed to burn the desired amount of urTokens and they automatically receive the native tokens into their wallet.
   
