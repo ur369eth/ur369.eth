@@ -243,7 +243,7 @@ The Dilithium-Crystals signature, public key, Keccak-256 hash, and the wallet si
 
 ### Sign Verification Process
 
-To sign, the user enters their Sign key, and the Keccak-256 hash is regenerated. This hash is then compared against the stored data on the blockchain. A new Wallet signature is created and verified on-chain.
+The user enters their Sign key, and the Keccak-256 hash is regenerated. This hash is then compared against the stored data on the blockchain. A new Wallet signature is created and verified on-chain.
 
 ### Rationale for selecting Dilithium-Crystals among other NIST-recommended algorithms
 
