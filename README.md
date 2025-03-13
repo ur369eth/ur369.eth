@@ -5,9 +5,9 @@ Description of working of Smart Contract is as follows:
 ## Functionalities
 
 - Decentralized Protection of Native Tokens
-- Decentralized Unprotection of Native Tokens
-- Transfer urTokens (ultra resistant Tokens)
 - Fee Collection System (Benefaction-fee)
+- Transfer urTokens (ultra resistant Tokens)
+- Decentralized Unprotection of Native Tokens (Claim)
 - Award System
 - Whitelist Mechanism
 - Sign Key to Perform User Operations (Transactions)
@@ -68,6 +68,32 @@ On the edge of the coin, it is a self-organizing distributive-system as in the p
 - On the block explorer the user can see all details as stated above and also how the benefaction fee they paid was automatically distributed into 4 addresses ((1)urgift / (2)ur-impact / (3)ur369 / (4)ur-community & devs benefit fund).
 
 - Once protected, the user can unportect and withdraw the native tokens at anytime and without restrictions. For this the user only has to click on 'Claim' button and proceed to burn the desired amount of urTokens and they automatically receive the native tokens into their wallet.
+
+
+### Benefaction-Fee Collection System
+
+**_Description:_** Two types of benefaction-fee are charged for the protect-service provided. The protcol always shows the fee upfront before collecting them:
+
+(i) A flat amount equivalent to $3.69 (collected in crypto and only once per address); this flat fee-amount is only charged if the user opts for the Quantum Resistant Sign Key. Upon collection the system automatically distributes the flat amount fee to 4 designated address with a social-good-purpose.
+
+(ii) A specific 0.369% of the amount the user wants to protect/allocate within the contract. This fee is collected by the system every time the user is protecting native tokens.
+
+As the system always shows the fee amount upfront to the user in the UI and as the user becomes aware of the benefaction-fee, then when the user proceeds to protect native tokens >> the benefaction-fee is deducted from the entered amount and the fee is distributed across 4 addresses within the system to fulfill a social-good-purpose. The remaining amount of native tokens is safeguarded within the contract and the equal amount of urTokens are minted-and-sent to the user's wallet address at 1:1 ratio in regards of the safeguarded native tokens. 
+
+Clarifying example: If after fee the user has 369 ETH within the contract then for this user the system minted-and-sent 369 urETH to the user's account.
+
+In essence, the system charges the benefaction-fee when protecting tokens; but not for any other operations like 'Transfer' or 'Claim' (only the gas fee shall be paid to validators for those operations). 
+
+**_Fee Collectors_**
+
+1. 30% of 0.369% is transferred to the urgift.eth address which will send awards to randomly selected participants every 369 hours 
+2. 30% of 0.369% is transferred to the ur-impact.eth to fund public goods and other important causes for the ecosystem
+3. 30% of 0.369% is transferred to the ur369.eth address to self-sustain the social good protocol
+4. 10% of 0.369% is transferred to the ur369community-devs.eth address to support the ur369.eth Community & Developers Benefit Fund
+
+   **_Procedure_**
+
+- First the fee is shown to the user before protecting their native tokens. When the user proceeds to protect their native tokens >> the benefaction-fee is deducted and distributed to the respective addresses for social-good-purpose.
   
 
 ### Transferring urTokens
@@ -76,14 +102,14 @@ On the edge of the coin, it is a self-organizing distributive-system as in the p
 
 **_Procedure_**
 
-- Click on "Transfer" button corresponding to tne respective urToken field
+- Click on "Transfer" button corresponding to tne respective urToken
 - Enter the amount of urTokens to transfer
 - Enter recipient address
 - Input respective Sign Key
-- Click 'Transfer' button and confirm the Tx on the wallet
+- Click 'Transfer' button and confirm the transaction on the wallet
 
 
-### Unprotecting (claiming) Native Tokens
+### Decentralized Unprotection of Native Tokens (Claim)
 
 **_Description:_** Unprotecting native tokens from the ur369 smart contract to receive native tokens back into your wallet. This operation is executed by burning urTokens and automatically receiving native tokens at 1:1 ratio back into your wallet.
 
@@ -94,23 +120,6 @@ On the edge of the coin, it is a self-organizing distributive-system as in the p
 - Enter the respective Sign Key and click on 'Unprotect' button
 - Smart contract will burn entered amount of urTokens and the respective native tokens will be transferred back into the user's wallet at 1:1 ratio
 - The user can unprotect (claim) native tokens at any time and without restrictions
-  
-
-### Benefaction-Fee Collection System
-
-**_Description:_** Each time a user protects/allocates native tokens within the contract, a specific and fix percentage (0.369%) will be deducted from the entered amount >> converted into urToken and sistributed across the system to fulfill a purpose. The remaining amount of native tokens will be safeguarded within the contract and the respective 1:1 ratio is minted and sent into the user's account.
-
-
-**_Fee Collectors_**
-
-1. 30% of 0.369% will be transferred to the urgift.eth address which will send awards to randomly selected participants every 369 hours 
-2. 30% of 0.369% will be transferred to the ur-impact.eth to fund public goods and other important causes for the ecosystem
-3. 30% of 0.369% will be transferred to the ur369.eth address to self-sustain the social good
-4. 10% of 0.369% will be transferred to the ur369community-devs.eth address to support the ur369.eth Community & Developers Benefit Fund
-
-   **_Procedure_**
-
-- Fee will be deducted at time time of protecting native tokens.
   
 
 ### Awward System
