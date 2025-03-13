@@ -10,7 +10,7 @@ Description of working of Smart Contract is as follows:
 - Fee Collection System (Benefaction-fee)
 - Award System
 - Whitelist Mechanism
-- Sign Key to Perform User Operations (transactions)
+- Sign Key to Perform User Operations (Transactions)
 - Master Key as Recovery Mechanism
 - Quantum Resistant Approach
 
@@ -43,7 +43,7 @@ On the edge of the coin: A self-organizing distributive system as in the process
 - *_(5) Click button/icon to show Master Key encrypted again_*
 - *_(6) Turn on the Wi-Fi_*
 - *_(7) Check the box(es) 'Add Quantum Resistant Protection (Optional)' and 'I understand ur369.eth cannot recover the Sign Key for me'_*
-- *-(8) The user sets Sign Key (a strong password or PIN that the user selects on their end to abstract away the private keys and protect tokens from theft) or the user sets a Quantum Resistant Sign Key (a strong password or PIN that the user selects on their end -- for this option the system incorporates a Dilithium Crystrals Algorithim) to abstract away the private keys and protect tokens from quantum threats*
+- *_(8) The user sets Sign Key (a strong password or PIN that the user selects on their end to abstract away the private keys and protect tokens from theft) or the user sets a Quantum Resistant Sign Key (a strong password or PIN that the user selects on their end -- for this option the system incorporates a Dilithium Crystrals Algorithim) to abstract away the private keys and protect tokens from quantum threats*
   
 - ## Code functionality resumes and continues on the next step
   
