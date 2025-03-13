@@ -181,7 +181,7 @@ The ur369.eth protocol does not charge a fee for this operation, only the gas fe
 
 **Implementation Guide:**
 
-For example, the sender is Uniswap or AAVE (Uniswap is actually whitelisted on the Ethereum mainnet):
+For example, the sender is Uniswap or AAVE (Uniswap v4 (Hooks) is actually whitelisted on the Ethereum mainnet):
    The system checks if the sender is a whitelisted contract address, and then the system allows for it to transfer urTokens without having to input Sign Key.
 
 **Strategy to Implement Whitelist Functionality:**
@@ -205,7 +205,7 @@ There are two ways to check that caller is a contract address or not:
 - *With the internet off* input the Master Key into the respective field: include all the separators ( - ) *up to the last dash/separator* and leave no spaces in between the dashes and the letters/characters, it shall all look as a string of dots -encrypted-
 - *Important: make sure you leave out (do not type) the last 4 characters.*
 - Turn the internet ON and with the cursor at the very end of the Master Key >> input the last 4 characters of the Master Key and click enter
-- The field "Reset Sign Key" to input and confirm new Sign Key should display for you
+- The field "Reset Sign Key" to input and confirm new Sign Key should display for the user
 
 ### Important note
 
@@ -247,7 +247,7 @@ The user enters their Sign key, and the Keccak-256 hash is regenerated. This has
 
 ### Rationale for selecting Dilithium-Crystals among other NIST-recommended algorithms
 
-NIST recommends multiple quantum-resistant algorithms, including SPHINCS+, Rainbow, Dilithium-Crystals etc. Here’s why it has been selected: Dilithium-Crystals offers efficient storage, consistent key generation, and resilient security against both classical and quantum attacks.
+NIST recommends multiple quantum-resistant algorithms, including SPHINCS+, Rainbow, Dilithium-Crystals, etc. Here’s why it has been selected: Dilithium-Crystals offers efficient storage, consistent key generation, and resilient security against both classical and quantum attacks.
 
 ### Multi-Layered Security
 
