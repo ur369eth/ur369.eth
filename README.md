@@ -1,6 +1,6 @@
 # What is ur369.eth.limo?
 
-ur stands for **ultra resistant** -- ur369.eth.limo is the distributed access point to a non-custodial and decentralized smart contract built for the purpose of: 
+ur stands for **ultra resistant** -- ur369.eth.limo is the distributed access point -User Interface (UI)- of the non-custodial and decentralized smart contract built for the purpose of: 
 - protect native tokens from theft and quantum threats
 - award users every 369 hours
 - fund public goods
