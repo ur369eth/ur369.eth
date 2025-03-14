@@ -18,7 +18,7 @@ Description of working of Smart Contract is as follows:
 
 **_Definition:_** On one side of the coin, this is an independent onchain 2FA (with extra functionalities). The main objective is to help prevent (and stop in full) crypto theft caused by bad actors infesting the ecosystem with constant phishing attacks, wallet drainers, and with other sophisticated exploits (see Bybit hack). The scope of the protection includes *potential quantum threats* (incorporating Dilithium-Crystals into the security scheme).
 
-It works by abstracting away the wallet's private keys to sign transactions and allowing the user to set their own (A) Classical Sign Key or (B) a Quantum Resistant Sign Key (optional).
+It works by abstracting away the wallet's private keys to sign transactions and allowing the user to set (and confirm onchain) their own (A) Classical Sign Key or (B) a Quantum Resistant Sign Key (optional).
 
 On the other side of the coin, it is a mechanism design in wich, without having a centralized custody of the tokens, the system accepts deposits of approved native tokens to isolate/remove said native tokens from circulation to keep them *safeguarded from theft and protected from quantum threats within the ur369.eth smart contract*, while simultaneously, upon receiving native tokens, the system mints urTokens (ultra resistant Tokens) and automatically sends urTokens to the user's wallet at 1:1 ratio in regards of the protected native tokens. 
 
