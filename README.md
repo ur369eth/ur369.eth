@@ -12,11 +12,11 @@ urTokens are ERC-20 tokens backed by native tokens at 1:1 ratio. Meaning that, i
 
 The advantage of having/using urTokens is that:
 
-(A) can only be transferred if-and-only-if the user inputs their Sign Key which they previously set (and confirmed onchain) making the urTokens ultra resistant to theft.
+(A) urTokens can only be transferred if-and-only-if the user inputs their Sign Key which they previously set (and confirmed onchain) making the urTokens ultra resistant to theft.
 
-(B) protect themselves and the native tokens within the contract from quantum threats with Dilithium-Crystals (a highly secure and efficient Post Quantum Cryptography (PQC) algorithm with a small signature scheme).
+(B) urTokens protect themselves and protect the native tokens within the contract from quantum threats with Dilithium-Crystals (a highly secure and efficient Post Quantum Cryptography (PQC) algorithm with a small signature scheme - suitable to use in blockchain).
 
-(C) users holding urTokens can receive awards from the system.
+(C) The users holding urTokens can receive random awards from the system.
 
 
 # Smart Contract -- Functionality is Described in Code
