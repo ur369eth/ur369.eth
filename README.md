@@ -63,7 +63,7 @@ If the user consents and pays the benefaction-fee to protect their native tokens
 
 *Power-users are: Liquidity Providers (LPs), users that provide ideas and their ideas are (or will be implemented), user who minted the ur369NFT (a contract outside of this contract). 
 
-Note: For this las part -as described in (9)- the code works up to sending funds to the corresponding addresses for A, B, C and D -- the subsequent transfers from said addresses are outside of the scope of this code and the transparent nature of the chain can attest of said transfers. The reason for the manual approach can be found in the ur369.eth.limo UI -Insight page -- point (14).
+Note: For this las part -as described in (9)- the code works up to sending funds to the corresponding addresses for A, B, C and D -- the subsequent transfers from said addresses are outside of the scope of this code and the transparent nature of the chain shall attest of said transfers (after the transfers are effected and confirmed onchain). The reason for the manual approach can be found in the ur369.eth.limo UI -Insight page -- point (14).
 
 **_Procedure_**
 
