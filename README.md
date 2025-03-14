@@ -53,10 +53,14 @@ It works by allowing the user to set (and confirm onchain) their own Classical S
 
 If the user consents and pays the benefaction-fee to protect their native tokens, then when the system receives it >> programmatically distributes the benefaction-fee into 4 addresses as follows: 
 
-(A) 30% to fund public goods (so far on payroll Giveth, Gitcoin and the Giving Block -more public goods can be added later-)  
+(A) 30% to fund public goods (e.g., Giveth, Gitcoin, the Giving Block...) And to award power-users* in the community 
 (B) 30% to award randomly selected users every 369 hours  
 (C) 30% to self-sustain ur369.eth (the social good protocol) and  
 (D) 10% to support the Community and Developers Benefit Fund  
+
+*Power-users are: Liquidity Providers (LPs), user that provide ideas and their ideas is (or will be implemented), user who minted the ur369NFT (a contract outside of this contract). 
+
+Note: For this las part -as described in (9)- the code works up to sending funds to the corresponding addresses for A, B, C and D -- the subsequent transfers from said addresses are outside of the scope of this code and the transparent nature of the chain can attest of said transfers. The reason for the manual approach can be found in the ur369.eth.limo UI -Insight page -- point (14).
 
 **_Procedure_**
 
