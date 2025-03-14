@@ -1,5 +1,7 @@
 # ur369 (ultra resistant 369)
+
 **urTokens (ultra resistant Tokens)** 
+
 **Functionality is described in Code**
 
 Description of working of Smart Contract is as follows:
@@ -17,6 +19,7 @@ Description of working of Smart Contract is as follows:
 - Quantum Resistant Approach
 
 ### Decentralized Protection of Native Tokens
+
 
 
 **_Definition:_** For a comprehensive definition, let's use the following verbal illustration:
