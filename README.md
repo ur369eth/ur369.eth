@@ -11,7 +11,7 @@ ur stands for **ultra resistant** -- ur369.eth.limo is the distributed access po
 urTokens are ERC-20 tokens backed by native tokens at 1:1 ratio. Meaning that, if for example, a user has an allocation of 369 ETH into the contract, then to that user the contract automatically minted/issued and sent 369 urETH (ultra resistant ETH) to their wallet. 
 
 The advantage of having/using urTokens is that:
-(A) can only be transferred if-and-only-if the user inputs their Sign Key which they previously set (and confirmed onchain) making it ultra resistant to theft
+(A) can only be transferred if-and-only-if the user inputs their Sign Key which they previously set (and confirmed onchain) making the urTokens ultra resistant to theft
 (B) protect themselves and the native tokens within the contract from quantum threats with Dilithium-Crystals (a highly secure and efficient Post Quantum Cryptography (PQC) algorithm with a small signature scheme)
 (C) users holding urTokens can receive awards from the system
 
