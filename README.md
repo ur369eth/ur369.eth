@@ -43,7 +43,7 @@ Description of working of Smart Contract is as follows:
 
 It works by allowing the user to set (and confirm onchain) their own Classical Sign Key (or a Quantum Resistant Sign Key) to abstract away the wallet's private keys to sign transactions.
 
-**(6) On the other side of the coin >>** this is a mechanism in wich, without having a centralized custody of any token, the system accepts deposits of approved native tokens to isolate/remove said native tokens from circulation to keep them *safeguarded from theft and protected from quantum threats within the ur369.eth smart contract*, while simultaneously, upon receiving native tokens, the system mints urTokens (ultra resistant Tokens) and automatically sends urTokens to the user's wallet at 1:1 ratio in regards of the protected native tokens. 
+**(6) On the other side of the coin >>** this is a mechanism in wich, without having a centralized custody of any token, the system accepts deposits of approved native tokens to isolate/remove said native tokens from circulation to keep them *safeguarded from theft and protected from quantum threats within the smart contract*, while simultaneously, upon receiving native tokens, the system mints urTokens (ultra resistant Tokens) and automatically sends urTokens to the user's wallet at 1:1 ratio in regards of the protected native tokens. 
 
 **(9) On the edge of the coin >>** this is a self-organizing distributive-system, because before the process of protecting the native tokens plus issuing-and-sending urTokens to the user's wallet, the system shows (upfront) to the user the benefaction-fee for the service provided:
 
