@@ -25,7 +25,7 @@ Description of working of Smart Contract is as follows:
 
 ### Functionalities
 
-- Decentralized Protection of Native Tokens
+- Decentralized Protection of Native Tokens (369)
 - Fee Collection System (Benefaction-fee)
 - Award System (Hybrid)
 - Sign Key to Perform User Operations (Transactions)
