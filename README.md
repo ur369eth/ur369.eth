@@ -1,5 +1,22 @@
-# ur369 -- Functionality is described in Code 
-**urTokens (ultra resistant Tokens)**
+# What is ur369.eth.limo?
+
+ur stands for **ultra resistant** -- ur369.eth.limo is the distributed access point to a non-custodial and decentralized smart contract built for the purpose of: 
+- protect native tokens from theft and quantum threats
+- award users every 369 hours
+- fund public goods
+
+
+# What are urTokens (ultra resistant Tokens)?
+
+urTokens are ERC-20 tokens backed by native tokens at 1:1 ratio. Meaning that, if for example, a user has an allocation of 369 ETH into the contract, then to that user the contract automatically minted/issued and sent 369 urETH to their wallet. 
+
+The advantage of having/using urTokens is that:
+(A) can only be transferred if-and-only-if the user inputs their Sign Key which they previously set (and confirmed onchain) making it ultra resistant to theft
+(B) protect themselves and the native tokens within the contract from quantum threats with Dilithium-Crystals (a highly secure and efficient Post Quantum Cryptography (PQC) algorithm with a small signature scheme)
+(C) users holding urTokens can receive awards from the system
+
+
+# Smart Contract Functionality is Described in Code
 
 Description of working of Smart Contract is as follows:
 
@@ -16,8 +33,6 @@ Description of working of Smart Contract is as follows:
 - Quantum Resistant Approach
 
 ### Decentralized Protection of Native Tokens
-
-
 
 **_Definition:_** For a comprehensive definition, let's use the following verbal illustration:
 
