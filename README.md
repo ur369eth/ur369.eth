@@ -37,15 +37,15 @@ Description of working of Smart Contract is as follows:
 
 ### Decentralized Protection of Native Tokens
 
-**_Definition:_** For a comprehensive definition, let's use the following verbal illustration:
+**_Definition:_** Let's define this from 3 angles with a comprhensive verbal illustration:
 
-**On one side of the coin >>** this is independent onchain 2FA (with extra functionalities). The main objective is to help prevent (and stop in full) crypto theft caused by bad actors infesting the ecosystem with constant phishing attacks, wallet drainers, and with other sophisticated exploits (see Bybit hack). The scope of the protection includes *potential quantum threats* (incorporating Dilithium-Crystals into the security scheme).
+**(3) On one side of the coin >>** this is independent onchain 2FA (with extra functionalities). The main objective is to help prevent (and stop in full) crypto theft caused by bad actors infesting the ecosystem with constant phishing attacks, wallet drainers, and with other sophisticated exploits (see Bybit hack). The scope of the protection includes *potential quantum threats* (incorporating Dilithium-Crystals into the security scheme).
 
 It works by allowing the user to set (and confirm onchain) their own Classical Sign Key (or a Quantum Resistant Sign Key) to abstract away the wallet's private keys to sign transactions.
 
-**On the other side of the coin >>** this is a mechanism in wich, without having a centralized custody of any token, the system accepts deposits of approved native tokens to isolate/remove said native tokens from circulation to keep them *safeguarded from theft and protected from quantum threats within the ur369.eth smart contract*, while simultaneously, upon receiving native tokens, the system mints urTokens (ultra resistant Tokens) and automatically sends urTokens to the user's wallet at 1:1 ratio in regards of the protected native tokens. 
+**(6) On the other side of the coin >>** this is a mechanism in wich, without having a centralized custody of any token, the system accepts deposits of approved native tokens to isolate/remove said native tokens from circulation to keep them *safeguarded from theft and protected from quantum threats within the ur369.eth smart contract*, while simultaneously, upon receiving native tokens, the system mints urTokens (ultra resistant Tokens) and automatically sends urTokens to the user's wallet at 1:1 ratio in regards of the protected native tokens. 
 
-**On the edge of the coin >>** this is a self-organizing distributive-system, because before the process of protecting the native tokens plus issuing-and-sending urTokens to the user's wallet, the system shows (upfront) to the user the benefaction-fee for the service provided:
+**(9) On the edge of the coin >>** this is a self-organizing distributive-system, because before the process of protecting the native tokens plus issuing-and-sending urTokens to the user's wallet, the system shows (upfront) to the user the benefaction-fee for the service provided:
 
 (i) A one time flat fee of $3.69 per address -collected in crypto- and only charged if the user opts for the Quantum Resistant Key.
 
