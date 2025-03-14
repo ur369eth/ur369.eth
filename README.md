@@ -45,7 +45,7 @@ It works by allowing the user to set (and confirm onchain) their own Classical S
 
 **(6) On the other side of the coin >>** this is a mechanism in wich, without having a centralized custody of any token, the system accepts deposits of approved native tokens to isolate/remove said native tokens from circulation to keep them *safeguarded from theft and protected from quantum threats within the smart contract*, and simultaneously, upon receiving native tokens, the system mints urTokens (ultra resistant Tokens) and automatically sends urTokens to the user's wallet at 1:1 ratio in regards of the protected native tokens. 
 
-**(9) On the edge of the coin >>** this is a self-organizing distributive-system, because before the process of protecting the native tokens plus issuing-and-sending urTokens to the user's wallet, the system shows (upfront) to the user the benefaction-fee for the protection-service provided:
+**(9) On the edge of the coin >>** this is a self-organizing distributive-system, because before-and-for this process to be accomplished (i.e., the decentralized protection of native tokens plus issuing-and-sending urTokens to the user's wallet) >> the system shows (upfront) to the user the benefaction-fee for the protection-service provided:
 
 (i) A one time flat fee of $3.69 per address -collected in crypto- and only charged if the user opts for the Quantum Resistant Sign Key.
 
