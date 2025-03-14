@@ -32,8 +32,8 @@ Description of working of Smart Contract is as follows:
 - Transfer urTokens (ultra resistant Tokens)
 - Decentralized Unprotection of Native Tokens (Claim)
 - Whitelist Mechanism for Smart Contracts (Interop)
-- Master Key as Recovery Mechanism
-- Quantum Resistant Approach
+- Master Key as Recovery Mechanism (Lost/forgotten Sign Key)
+- Quantum Resistant Approach (Dilithium-Crystals)
 
 ### Decentralized Protection of Native Tokens
 
