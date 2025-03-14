@@ -1,4 +1,4 @@
-# urToken (ultra resistant Tokens) -- Function wise functionality is described in Code
+# ur369 (ultra resistant 369) & urTokens (ultra resistant Tokens) - Function wise functionality is described in Code
 
 Description of working of Smart Contract is as follows:
 
@@ -16,7 +16,7 @@ Description of working of Smart Contract is as follows:
 
 ### Decentralized Protection of Native Tokens
 
-**_Definition:_** 
+**_Definition:_** For a comprehensive exegesis, let's use the following verbal illustration:
 
 **On one side of the coin >>** an independent onchain 2FA (with extra functionalities). The main objective is to help prevent (and stop in full) crypto theft caused by bad actors infesting the ecosystem with constant phishing attacks, wallet drainers, and with other sophisticated exploits (see Bybit hack). The scope of the protection includes *potential quantum threats* (incorporating Dilithium-Crystals into the security scheme).
 
