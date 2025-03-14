@@ -16,7 +16,7 @@ The advantage of having/using urTokens is that:
 (C) users holding urTokens can receive awards from the system
 
 
-# Smart Contract Functionality is Described in Code
+# Smart Contract -- Functionality is Described in Code
 
 Description of working of Smart Contract is as follows:
 
