@@ -1,10 +1,10 @@
-**ur369 (ultra resistant 369)** 
+# ur369 (ultra resistant 369)
 **urTokens (ultra resistant Tokens)** 
 **Functionality is described in Code**
 
 Description of working of Smart Contract is as follows:
 
-## Functionalities
+### Functionalities
 
 - Decentralized Protection of Native Tokens
 - Fee Collection System (Benefaction-fee)
