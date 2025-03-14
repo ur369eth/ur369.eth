@@ -1,4 +1,4 @@
-# ur369 -- Functionality is described in Code
+# ur369 -- Functionality is described in Code 
 **urTokens (ultra resistant Tokens)**
 
 Description of working of Smart Contract is as follows:
