@@ -31,8 +31,11 @@ On the edge of the coin >> a self-organizing distributive-system, because before
 If the user consents and pays the benefaction-fee to protect their native tokens, then when the system receives it >> programmatically distributes the benefaction-fee into 4 addresses as follows: 
 
 (A) 30% to fund public goods (so far on payroll Giveth, Gitcoin and the Giving Block -more public goods can be added later-)
+
 (B) 30% to award randomly selected users every 369 hours
+
 (C) 30% to self-sustain ur369.eth (the social good protocol) and
+
 (D) 10% to support the Community and Developers Benefit Fund
 
 **_Procedure_**
