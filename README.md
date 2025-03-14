@@ -47,9 +47,9 @@ It works by allowing the user to set (and confirm onchain) their own Classical S
 
 **(9) On the edge of the coin >>** this is a self-organizing distributive-system, because before-and-for this process to be accomplished (i.e., the decentralized protection of native tokens plus issuing-and-sending urTokens to the user's wallet) >> the system shows (upfront) to the user the benefaction-fee for the protection-service provided:
 
-(i) A one time flat fee of $3.69 per address -collected in crypto- and only charged if the user opts for the Quantum Resistant Sign Key.
+(i) A one time flat fee of $3.69 per address -collected in crypto- only charged if the user opts for the Quantum Resistant Sign Key.
 
-(ii) And a 0.369% of the amount being protected -collected each time the user allocates funds within the contract-.
+(ii) A 0.369% of the amount being protected -collected each time the user allocates/protects funds within the contract-.
 
 If the user consents and pays the benefaction-fee to protect their native tokens, then when the system receives it >> programmatically distributes the benefaction-fee into 4 addresses as follows: 
 
