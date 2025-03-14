@@ -1,4 +1,4 @@
-# urToken (Function wise functionality is described in Code)
+# urToken (ultra resistant Tokens) -- Function wise functionality is described in Code
 
 Description of working of Smart Contract is as follows:
 
