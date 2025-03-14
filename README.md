@@ -61,7 +61,7 @@ If the user consents and pays the benefaction-fee to protect their native tokens
 
 (D) 10% to support the Community and Developers Benefit Fund 
 
-*Power-users are: Liquidity Providers (LPs), users that provide ideas and their ideas are (or will be implemented), user who minted the ur369NFT (a contract outside of this contract). 
+*Power-users are: Liquidity Providers (LPs), users that provide ideas and their ideas are (or will be implemented), user who minted the ur369NFT (a souldbound NFT outside of this contract from which the unique number identifier of the NFT + the same address having urTokens makes the user/owner a power-user in order to boost the awards set aside for them in A). 
 
 Note: For this las part -as described in (9)- the code works up to sending funds to the corresponding addresses for A, B, C and D -- the subsequent transfers from said addresses are outside of the scope of this code and the transparent nature of the chain shall attest of said transfers (after the transfers are effected and confirmed onchain). The reason for the manual approach can be found in the ur369.eth.limo UI -Insight page -- point (14).
 
