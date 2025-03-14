@@ -1,4 +1,6 @@
-# ur369 (ultra resistant 369) & urTokens (ultra resistant Tokens) - Function wise functionality is described in Code
+# ur369 (ultra resistant 369)
+# urTokens (ultra resistant Tokens)
+# Functionality is described in Code
 
 Description of working of Smart Contract is as follows:
 
