@@ -170,7 +170,7 @@ The code functionality continues in subsequent fields.
 
 **_Description:_** urTokens can be transferred if-and-only-if the user inputs the respective Sign Key.
 
-The feature has been impelmented to serve as an extra layer of protection, primarily to prevent any bad actor from executing a transaction even if they would have gained access to the wallet's private keys of the user. Therefore, on each user operation involving urTokens 'Transfer' or 'Claim' >> the user must enter their respective Sign Key on the UI otherwise transaction will fail. Without the Sign Key urTokens cannot be moved.
+The feature has been impelmented to serve as an extra layer of protection, primarily to prevent any bad actor from executing a transaction even if they would have gained access to the wallet's private keys of the user. Therefore, on each user operation involving urTokens 'Transfer' or 'Claim' >> the user must enter their respective Sign Key on the UI otherwise the transaction will fail. Without the Sign Key urTokens cannot be moved.
 
 
 ### Transfer urTokens
