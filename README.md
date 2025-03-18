@@ -110,9 +110,9 @@ Note: For this las part -as described in (9)- the code works up to sending funds
 
 - After the transaction is confirmed, the UI shows the amount of native tokens protected (allocated within the contract), the benefaction-fee amount the user paid to the contract, the amount of urTokens the contract issued and sent to the user's account. The UI also provides the user with a hyperlink for them to see and inspect the transaction details on the block explorer.
 
-- On the block explorer the user can see all details as stated above and also how the benefaction fee they paid was automatically distributed into 4 addresses ((1)urgift / (2)ur-impact / (3)ur369 / (4)ur-community & devs benefit fund).
+- On the block explorer the user can see all details as stated above and also how the benefaction fee they paid was automatically distributed into 4 addresses ((1)urgift.eth / (2)ur-impact.eth / (3)ur369.eth / (4)ur369community-devs.eth).
 
-- Once protected, the user can unportect and withdraw the native tokens at anytime and without restrictions. For this the user only has to click on 'Claim' button and proceed to burn the desired amount of urTokens and they automatically receive the native tokens into their wallet.
+- Once protected, the user can unportect and withdraw the native tokens at anytime and without restrictions. For this operation the user only has to click on 'Claim' button and proceed to burn the desired amount of urTokens and they automatically receive the native tokens into their wallet.
 
 
 ### Benefaction-Fee Collection System
