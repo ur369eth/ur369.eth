@@ -125,39 +125,39 @@ Note: For this las part -as described in (9)- the code works up to sending funds
 
 As the system always shows the fee amount upfront to the user in the UI and as the user becomes aware of the benefaction-fee, then when the user proceeds to protect native tokens >> the benefaction-fee is deducted from the entered amount and the fee is distributed across 4 addresses within the system to fulfill a social-good-purpose. The remaining amount of native tokens is safeguarded within the contract and the equal amount of urTokens are minted-and-sent to the user's wallet address at 1:1 ratio in regards of the safeguarded native tokens. 
 
-Clarifying example: If after fee the user has 369 ETH within the contract then for this user the system minted-and-sent 369 urETH to the user's account.
+Clarifying example: If after fee the user has 369 ETH within the contract then, for this user, the system automatically minted-and-sent 369 urETH to the user's account.
 
-In essence, the system charges the benefaction-fee when protecting tokens; but not for any other operations like 'Transfer' or 'Claim' (only the gas fee shall be paid to validators for those operations). 
+In essence, the system charges the benefaction-fee when protecting tokens; but does not charge a fee for any other User Operations like 'Transfer' or 'Claim' (only the gas fee shall be paid to validators for those operations). 
 
 **_Fee Collectors_**
 
-1. 30% of 0.369% is transferred to the urgift.eth address which will send awards to randomly selected participants every 369 hours 
-2. 30% of 0.369% is transferred to the ur-impact.eth to fund public goods and other important causes for the ecosystem
-3. 30% of 0.369% is transferred to the ur369.eth address to self-sustain the social good protocol
-4. 10% of 0.369% is transferred to the ur369community-devs.eth address to support the ur369.eth Community & Developers Benefit Fund
+1. 30% of 0.369% is transferred to urgift.eth which will send awards to randomly selected users every 369 hours 
+2. 30% of 0.369% is transferred to ur-impact.eth to fund public goods and other important causes for the ecosystem
+3. 30% of 0.369% is transferred to ur369.eth to self-sustain the social good protocol
+4. 10% of 0.369% is transferred to ur369community-devs.eth to support the ur369.eth Community & Developers Benefit Fund
 
    **_Procedure_**
 
-- First the fee is shown to the user before protecting their native tokens. When the user proceeds to protect their native tokens >> the benefaction-fee is deducted and distributed to the respective addresses for social-good-purpose.
+- First the fee is shown to the user before protecting their native tokens. If the user is okay with paying the displayed fee, then the user proceeds to protect their native tokens, the benefaction-fee is deducted from the amount deposited/allocated into the contract, and the fee distributed to the respective addresses for social-good-purpose.
   
 
 ### Awward System
 
-**_Description:_** Every time a user protects native tokens the system charges a Benefaction-fee which is used, in its great majority, to award to the participants of the system and the rest is used for public goods funding.
+**_Description:_** Every time a user protects native tokens the system charges a Benefaction-fee, which is used, in its great majority, to award to the participants of the system and the rest is used for public goods funding.
 
-Every 369 hours (Gift Pool) and every 369 days (Stateless Pool) a participant that protected native tokens will be randomly selected and their address will be displayed on the UI in a semi-concealed fashion. 
+Every 369 hours (Gift Pool) and every 369 days (Stateless Pool) a participant that protected native tokens will be randomly selected and their address will be displayed on the UI in a semi-concealed fashion. If the user fulfilled the conditions to win the prize, then an award is sent to the user's wallet address.
 
 **_Procedure_**
 
 - Smart contract collects benefaction-fee and sends 30% to urgift.eth and 30% to ur-impact.eth
-- Each detail will be shown on the 'Award' page regarding the assets that can be awarded to users and that are within the displayed addresses
+- Each detail will be shown on the 'Award' page regarding the assets that can be awarded to users and that are within the addresses urgift.eth and ur-impact.eth (displayed in the UI)
 - The randomly selected participant's address will be shown in the Awards page every 369 hours in a semi-concealed fashion
   
-*_Note: The award system is hybrid, meaning that the above is within the scope of the code. However, for the part shared below, in regards of this segment of 'Award System' the code functionality is not included as the next section for the Award System operation is executed manually. The reason for the manual approach can be found in the ur369.eth.limo UI -Insight page -- point (14)-._*
+*_Note: The award system is hybrid, meaning that the above is within the scope of the code. However, for the part shared below, in regards of this segment of 'Award System' the code functionality is not included as the next section for the Award System Operation is executed manually. The reason for the manual approach can be found in the ur369.eth.limo UI -Insight page -- point (14)-._*
 
-*_Just as a courtesy and honoring transparency, here is shared the Award System Manual approach:_*
+*_Just as a courtesy and honoring transparency, here is shared the Award System Operation (Manual Approach):_*
 
-*_The objective is to avoid a sybil exploit that can be effected if the system send awards automatically via code (as it was found while testing) and the purpose is for the participants to receive awards without any possibility of them tricking the system. Awards can be sent from: (A) the Gift Pool, (B) the Impact Pool, (C) the Stateless Pool (any award for A, B and C is received by the user if they fulfilled the stated pool conditions - see Awards page), and (D) to receive awards from satellite-addresses that work in harmony with the ur369NFT mint._* 
+*_The objective is to avoid a sybil exploit that can be effected if the system sends awards automatically via code (as it was found while testing) and the purpose is for the participants to receive awards without any possibility of them tricking the system. Awards can be sent from: (A) the Gift Pool, (B) the Impact Pool, and (C) the Stateless Pool (any award for A, B and C is received by the user if they fulfilled the conditions to win the prize - see Awards page 'Conditions to win the prize' section). Moreover, users can receive awards (manually) from satellite-addresses that work in harmony with the ur369NFT mint._* 
 
 *_The transparent nature of a public blockchain (like Ethereum) where urTokens are deployed, can attest for the fullfilment of these manual transactions that can be correlated and publicly audited to confirm that an address displayed in the UI, for example, did (or did not) mint the ur369NFT and did or did not receive the corresponding urTokens award if selected by the system._*
 
