@@ -194,7 +194,7 @@ The ur369.eth protocol does not charge a fee for this operation, only the gas fe
 
 **_Description:_** urTokens can be transfered if-and-only-if the user enters their respective Sign Key.
 
-Unprotecting native is claiming the tokens from the ur369 smart contract to receive the native tokens back into the user's wallet. This operation is executed by burning urTokens and automatically receiving native tokens at 1:1 ratio back into the user's wallet. 
+Unprotecting native tokens is claiming (withdrawing) the tokens from the ur369 smart contract to receive the native tokens back into the user's wallet. This operation is executed by burning urTokens and automatically receiving native tokens at 1:1 ratio back into the user's wallet. 
 
 The ur369.eth protocol does not charge a fee for this operation, only the gas fee must be paid by the user to validators of the respective chain.
 
@@ -246,7 +246,7 @@ There are two ways to check that caller is a contract address or not:
 
 In the beginning and even before allocating funds into the contract, the user can use the same procedure as described above to confirm that their Sign Key has been exported from online to offline correctly. 
 
-When these steps are applied and the user can see the field 'Reset Sign Key' to input and confirm new Sign Key, that means the Master Key has been transcribed without any misspellings and the user can allocate funds with 100% confidence into the contract.
+When these steps are applied and the user can see the field 'Reset Sign Key' to input and confirm new Sign Key, that means the Master Key has been transcribed without any misspellings and the user can allocate funds with 100% confidence into the contract, being assertive that in the event of losing/forgetting their Sign Key, they can input their Master Key and reset the Sign Key.
 
 The Master Key must always be kept in a safe place (preferably offline).
 
