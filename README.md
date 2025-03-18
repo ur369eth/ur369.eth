@@ -61,7 +61,7 @@ If the user consents and pays the benefaction-fee to protect their native tokens
 
 (D) 10% to support the Community and Developers Benefit Fund 
 
-*Power-users are: Liquidity Providers (LPs), users that provide ideas and their ideas are (or will be implemented), user who minted the ur369NFT (a soulbound NFT outside of this contract from which the unique number identifier of the NFT + the same address owning the NFT having urTokens makes the user/owner a power-user in order to boost the award set aside for them in A). 
+*Power-users are: Liquidity Providers (LPs), users that provide ideas and their ideas are (or will be implemented), user who minted the ur369NFT -a soulbound NFT outside of this contract- from which the unique number identifier of the NFT + the same address owning the NFT having urTokens makes the user/owner a power-user in order to boost the award set aside for them in (A). 
 
 Note: For this las part -as described in (9)- the code works up to sending funds to the corresponding addresses for A, B, C and D -- the subsequent transfers from said addresses are outside of the scope of this code and the transparent nature of the chain shall attest of said transfers (after the transfers are effected and confirmed onchain). The reason for the manual approach can be found in the ur369.eth.limo UI -Insight page -- point (14).
 
@@ -73,12 +73,12 @@ Note: For this las part -as described in (9)- the code works up to sending funds
 
 - In case of new user/address the system will randomly generate an encrypted Master Key for the user (only shown once on that section and during that time) and will prompt the user to set a Sign Key or a Quantum Resistant Sign Key (optional). 
 
-- The Master Key will be used to (A) recover the user's Sign Key in case it is lost or forgotten and (B) for the user to add Quantum Key (in case the user did not add it in the first instance and wanted to add it later).
+- The Master Key will be used to (A) recover the user's Sign Key in case it is lost or forgotten and (B) for the user to add Quantum Resistant Sign Key (in case the user did not add it in the first instance and wanted to add it later).
 
-- Therefore, previous to jumping into setting the Sign Key, the system clearly indicates to the user a step-by-step guide to safely export the provided and encrypted Master Key from online to offline with: (A) near zero chances of misspelling it (as the Master Key is comprised of seperators, placed every 5 characters, to facilitate its clear reading and transcription) and (B) lowering the posibility for the Master Key to be remotely viewed or detected by a possible/potential bad actor as the system, before displaying the Master Key on the screen:
+- Therefore, previous to jumping into setting the Sign Key, the system clearly indicates to the user a step-by-step guide to safely export the provided and encrypted Master Key from online to offline with: (A) near zero chances of misspelling it (as the Master Key is comprised of seperators, placed every 5 characters, to facilitate its clear reading and transcription) and (B) lowering the posibility for the Master Key to be remotely viewed or detected by any potential bad actor as the system, before allowing the Master Key to be visible on the screen:
 
-- (i) Strongly recommends the user to have the internet off
-- (ii) On purpuse, the system does not provide a "copy Master Key button" in the UI, thus inducing the user to export the Master Key by writing it offline instead of copying it as that practice could carry a risk vector, and
+- (i) Indicates and strongly recommends the user to have the internet off, and the Master Key **can only be viewed after the user checks a box to acknowledge the internet is off**
+- (ii) On purpuse, the system does not provide a "copy Master Key button" in the UI, thus inducing the user to export the Master Key by writing it offline instead of copying the Master Key as the practice of copying it could carry a risk vector, and
 - (iii) The system also alerts to never take a picture or screenshot of the Master Key or private keys
     
 - **_Instructions to safely export the Master Key from online to offline (the 8 steps below are out of the scope of the code - however, these are included here in order to assist with the full understanding of the hollistic approach about best parctice in Crypto Security and the overall rationale):_**
