@@ -141,14 +141,15 @@ Every time the system collects in crypto the benefaction-fee equivatente to $3.6
    **_Procedure_**
 
 - First the fee is shown to the user before protecting their crypto tokens. The user can select the desired token to pay the fee, from stablecoins to a variety of tokens listed in the UI can be used to pay the fee.
-- The user executes the transaction sending the benefaction-fee and the crypto asset to protect.
-- The fee is received into the system and automatically distributed to the respective addresses for social-good-purpose and the user receives the urTokens (ultra resistant Tokens) at 1:1 ratio.
-- The crypto asset protected (urTokens) are visible in the interface and the user can add it to the wallet just by clicking the 'Add to Wallet' button.
+- The user executes the transaction sending the benefaction-fee and the crypto asset to protect
+- The fee is received into the system and automatically distributed to the respective addresses for social-good-purpose
+- The user receives the urTokens (ultra resistant Tokens) at 1:1 ratio in regards of the crypto tokens they protected within the contract
+- The urTokens sent to the user are visible and can be operated (e.g., transfer, claim) via the user interface (UI). To see the urTokens in their wallet, the user can click the 'Add to Wallet' button
   
 
 ### Awward System
 
-**_Description:_** Every time a user protects crypto tokens the system charges a Benefaction-fee, which is used, in its great majority, to award the participants of the system and the rest is used for public goods funding and to self-sustain the protocol.
+**_Description:_** Every time a user protects crypto assets the system charges a Benefaction-fee, which is used, in its great majority, to award the participants of the system and the rest is used for public goods funding and to self-sustain the protocol.
 
 Every 369 hours (Gift Pool) and every 369 days (Stateless Pool) a participant that protected any supported crypto asset(s) will be randomly selected and their address will be displayed on the UI in a semi-concealed fashion. If the user fulfilled the conditions to win the prize, then an award is sent to the user's wallet address.
 
