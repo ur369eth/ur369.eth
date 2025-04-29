@@ -69,13 +69,13 @@ Note: For this las part -as described in (9)- the code works up to sending funds
 
 **_Procedure_**
 
-- Once on the UI dashboard, the user clicks on the 'Protect' button corresponding to the crypto token they want to protect.
+- Once on the UI dashboard, the user clicks on the 'Protect' button corresponding to the crypto token they want to protect
   
-- The system will check if this is a new user/address or not. In case of an already registered user/address the system just shows the form for the user to allocate the desired amount of tokens into the contract to be protected.
+- The system will check if this is a new user/address or not. In case of an already registered user/address the system just shows the form for the user to allocate the desired amount of tokens into the contract to be protected
 
-- In case of new user/address the system will randomly generate an encrypted Master Key for the user (only shown once on that section and during that time) and will prompt the user to set a Sign Key or a Quantum Resistant Sign Key (optional). 
+- In case of new user/address the system will randomly generate an encrypted Master Key for the user (only shown once on that section and during that time) and will prompt the user to set a Sign Key or a Quantum Resistant Sign Key (optional)
 
-- The Master Key will be used to (A) recover the user's Sign Key in case it is lost or forgotten and (B) for the user to add Quantum Resistant Sign Key (in case the user did not add it in the first instance and wanted to add the Quantum Key later).
+- The Master Key will be used to (A) recover the user's Sign Key in case it is lost or forgotten and (B) for the user to add Quantum Resistant Sign Key (in case the user did not add it in the first instance and wanted to add the Quantum Key later)
 
 - Therefore, previous to proceeding to setting the Sign Key, the system clearly indicates to the user a step-by-step guide to safely export the provided and encrypted Master Key from online to offline with: (A) near zero chances of misspelling it (as the Master Key is comprised of seperators, placed every 5 characters, to facilitate its clear reading and transcription) and (B) with near zero chances for the Master Key to be remotely viewed or detected/intercepted by any potential bad actor; as the system, before allowing the Master Key to be visible on the screen:
 
