@@ -119,35 +119,36 @@ Note: For this las part -as described in (9)- the code works up to sending funds
 
 ### Benefaction-Fee Collection System
 
-**_Description:_** Two types of benefaction-fee are charged for the protect-service provided. The protcol always shows the fee upfront before collecting them:
+**_Description:_** Two types of benefaction-fee are charged for the provided service of protecting the crypto assets. The protcol always displays and inform about the fee upfront, thus the user becomes aware of the fee to be paid:
 
-(i) A flat amount equivalent to $3.69 (collected in crypto and only once per address); this flat fee-amount is only charged if the user opts for the Quantum Resistant Sign Key. Upon collection the system automatically distributes the flat amount fee to 4 designated address with a social-good-purpose.
+(i) The Quantum Resistant Protection: A $3.69 fee collected in crypto **_only once per wallet address._** Enabling the Quantun Resistant Sign Key (to protect against quantum threats) is optional, and it can be activated at the beginning of the wallet address interaction with the protocol or at a later date.
 
-(ii) A specific 0.369% of the amount the user wants to protect/allocate within the contract. This fee is collected by the system every time the user is protecting crypto tokens. If the amount surpasses $1MM then the benefaction-fee will dynamically auto-adjust to 0.0369% to be collected from the amount to protect.
+(ii) The Classical Anti-Theft Protection: A $3.69 fee collected in crypto **_every time the user protects a crypto asset against theft_**. 
 
-As the system always shows the fee amount upfront to the user in the UI and as the user becomes aware of the benefaction-fee, then when the user proceeds to protect the crypto tokens >> the benefaction-fee is deducted from the entered amount and the fee is distributed across 4 addresses within the system to fulfill a social-good-purpose. The remaining amount of crypto tokens is safeguarded within the contract and the equal amount of urTokens are minted-and-sent to the user's wallet address at 1:1 ratio in regards of the safeguarded crypto tokens. 
-
-Clarifying example: If after fee the user has 369 ETH within the contract then, for this user, the system automatically minted-and-sent 369 urETH to the user's account.
+Upon collection of any of the fee type >> the system automatically distributes the flat amount fee to 4 designated address with a social-good-purpose.  
 
 In essence, the system charges the benefaction-fee when protecting tokens; but does not charge a fee for any other User Operations like 'Transfer' or 'Claim' (only the gas fee shall be paid to validators for those operations). 
 
 **_Fee Collectors_**
 
-1. 30% of 0.369% (or of 0.0369% if amount is higher that $1MM) is transferred to urgift.eth which will send awards to randomly selected users every 369 hours 
-2. 30% of 0.369% (or of 0.0369% if amount is higher that $1MM) is transferred to ur-impact.eth to fund public goods and other important causes for the ecosystem
-3. 30% of 0.369% (or of 0.0369% if amount is higher that $1MM) is transferred to ur369self-sustain.eth to self-sustain the social good protocol
-4. 10% of 0.369% (or of 0.0369% if amount is higher that $1MM) is transferred to ur369community-devs.eth to support the ur369.eth Community & Developers Benefit Fund
+1. 30% of $3.69 is transferred to urgift.eth which will send awards to randomly selected users every 369 hours 
+2. 30% of $3.69 is transferred to ur-impact.eth to fund public goods and other important causes for the ecosystem
+3. 30% of $3.69 is transferred to ur369self-sustain.eth to self-sustain the social good protocol
+4. 10% of $3.69 is transferred to ur369community-devs.eth to support the ur369.eth Community & Developers Benefit Fund
 
    **_Procedure_**
 
-- First the fee is shown to the user before protecting their crypto tokens. If the user is okay with paying the displayed fee, then the user proceeds to protect their crypto tokens, the benefaction-fee is deducted from the amount deposited/allocated into the contract, and the fee distributed to the respective addresses for social-good-purpose.
+- First the fee is shown to the user before protecting their crypto tokens. The user can select the desired token to pay the fee, from stablecoins to a variety of tokens listed in the UI can be used to pay the fee.
+- The user executes the transaction sending the benefaction-fee and the crypto asset to protect.
+- The fee is received into the system and automatically distributed to the respective addresses for social-good-purpose and the user receives the urTokens (ultra resistant Tokens) at 1:1 ratio.
+- The crypto asset protected (urTokens) are visible in the interface and the user can add it to the wallet just by clicking the 'Add to Wallet' button.
   
 
 ### Awward System
 
-**_Description:_** Every time a user protects crypto tokens the system charges a Benefaction-fee, which is used, in its great majority, to award the participants of the system and the rest is used for public goods funding.
+**_Description:_** Every time a user protects crypto tokens the system charges a Benefaction-fee, which is used, in its great majority, to award the participants of the system and the rest is used for public goods funding and to self-sustain the protocol.
 
-Every 369 hours (Gift Pool) and every 369 days (Stateless Pool) a participant that protected native tokens will be randomly selected and their address will be displayed on the UI in a semi-concealed fashion. If the user fulfilled the conditions to win the prize, then an award is sent to the user's wallet address.
+Every 369 hours (Gift Pool) and every 369 days (Stateless Pool) a participant that protected any supported crypto asset(s) will be randomly selected and their address will be displayed on the UI in a semi-concealed fashion. If the user fulfilled the conditions to win the prize, then an award is sent to the user's wallet address.
 
 **_Procedure_**
 
