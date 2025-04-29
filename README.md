@@ -131,10 +131,12 @@ In essence, the system charges the benefaction-fee when protecting tokens; but d
 
 **_Fee Collectors_**
 
-1. 30% of $3.69 is transferred to urgift.eth which will send awards to randomly selected users every 369 hours 
-2. 30% of $3.69 is transferred to ur-impact.eth to fund public goods and other important causes for the ecosystem
-3. 30% of $3.69 is transferred to ur369self-sustain.eth to self-sustain the social good protocol
-4. 10% of $3.69 is transferred to ur369community-devs.eth to support the ur369.eth Community & Developers Benefit Fund
+Every time the system collects in crypto the benefaction-fee equivatente to $3.69 -- then, programatically:
+
+1. 30% is transferred to urgift.eth which will send awards to randomly selected users every 369 hours 
+2. 30% is transferred to ur-impact.eth to fund public goods and other important causes for the ecosystem
+3. 30% is transferred to ur369self-sustain.eth to self-sustain the social good protocol
+4. 10% is transferred to ur369community-devs.eth to support the ur369.eth Community & Developers Benefit Fund
 
    **_Procedure_**
 
