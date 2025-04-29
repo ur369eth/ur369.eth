@@ -8,9 +8,9 @@ ur stands for **ultra resistant** -- ur369.eth.limo is the distributed access po
 
 # What are urTokens (ultra resistant Tokens)?
 
-urTokens are ERC-20 tokens backed by cryptographic tokens at 1:1 ratio. Meaning that, if for example, a user has an allocation of 369 ETH into the contract, then to that user the contract automatically minted/issued and sent 369 urETH (ultra resistant ETH) to their wallet. 
+urTokens are ERC-20 tokens backed by cryptographic tokens at 1:1 ratio. Meaning that, if for example, a user has an allocation of 369 ETH into the contract, then to that user the contract automatically minted/issued and sent 369 urETH (ultra resistant ETH) to their wallet address.
 
-Advantage of urTokens over native tokens, ERC-20 tokens or any other token-standard (e.g., BEP-20, SPL, etc):
+Advantage of urTokens over native tokens and/or ERC-20 tokens as well as over any other token-standard (e.g., BEP-20, SPL, etc):
 
 (A) urTokens can only be transferred if-and-only-if the user inputs their Sign Key which they previously set (and confirmed onchain), making urTokens ultra resistant to theft.
 
@@ -41,17 +41,17 @@ Description of working of Smart Contract is as follows:
 
 **(3) On one side of the coin >>** this is an independent onchain 2FA (with extra functionalities). The main objective is to help prevent (and stop in full) the theft of cryptogrpahic tokens (also called crypto tokens or tokens); such theft is widely caused by bad actors infesting the crypto ecosystem with constant phishing attacks, wallet drainers, and with other sophisticated exploits (see Bybit hack). The scope of the *decentralized protection* of crypto tokens includes *potential quantum threats* (incorporating Dilithium-Crystals into the security scheme).
 
-The decentralized protection of crypto tokens works by allowing the users to set (and confirm onchain) their own Classical Sign Key (and a Quantum Resistant Sign Key) to abstract away the wallet's private keys to sign transactions.
+The decentralized protection of crypto tokens works by allowing the users to set (and confirm onchain) their own Classical Sign Key (and also Quantum Resistant Sign Key -optional-) to abstract away the wallet's private keys to sign transactions.
 
 **(6) On the other side of the coin >>** this is a mechanism in wich, without having a centralized custody of any crypto token, the system accepts deposits of approved crypto tokens to isolate/remove said crypto tokens from circulation to keep them *safeguarded from theft and protected from quantum threats within the smart contract*, and simultaneously, upon receiving crypto tokens, the system mints urTokens (ultra resistant Tokens) and automatically sends urTokens to the user's wallet address at 1:1 ratio in regards of the protected crypto tokens. 
 
 **(9) On the edge of the coin >>** this is a self-organizing distributive-system, because before-and-for this process to be accomplished (i.e., the decentralized protection of crypto tokens plus issuing-and-sending urTokens to the user's wallet) >> the system shows (upfront) to the user >> the benefaction-fee for the protection-service provided:
 
-(i) A one time flat fee of $3.69 per address -collected in crypto- only charged if the user opts for the Quantum Resistant Sign Key.
+(i) A one time flat fee of $3.69 per address, collected in crypto, **_charged only once per wallet addres and only if the user opts for the Quantum Resistant Sign Key._**
 
-(ii) A 0.369% of the amount being protected -collected each time the user allocates/protects funds within the contract-. The 0.369% is collected for any amount equivalent and below $1MM. When the amount protected exceed $1MM, then the benefaction fee dynamically self-adjust to 0.0369% to be collected from the amount being protected.
+(ii) A $3.69 benefaction-fee collected in crypto **_charged every time the user protects a crypto asset against theft_**.
 
-If the user consents and pays the benefaction-fee to protect their cryptographic tokens, then, when the system receives the funds >> programmatically distributes the benefaction-fee into 4 addresses as follows: 
+When the system receives the benefaction-fee >> programmatically distributes the funds into 4 addresses as follows: 
 
 (A) 30% to the Impact Pool (ur-impact.eth) to fund public goods (e.g., Giveth, Gitcoin, the Giving Block...) and to award power-users* in the community
 
@@ -65,7 +65,7 @@ If the user consents and pays the benefaction-fee to protect their cryptographic
 
 Power-users are (i) urTokens Liquidity Providers (LPs), (ii) users that provide ideas for the ur369 ecosystem and their ideas are (or will be implemented), and (iii) users who minted the ur369NFT -a soulbound NFT outside of this contract- from which (iv) the unique number identifier of the NFT and (v) the same address that minted the NFT having urTokens within it >> therefore any user with any of the atribute(s) as mentioned in points (i) to (v) are Power-user of the ur369 ecosystem and they can received boosted award(s) from the address ur369NFT-gift.eth, the address ur-stateless.eth (Stateless Pool), and from the address ur-impact.eth (Impact Pool). 
 
-Note: For this las part -as described in (9)- the code works up to sending funds to the corresponding addresses for A, B, C and D -- the subsequent transfers from said addresses are outside of the scope of this code and the transparent nature of the chain shall attest of said transfers (after the transfers are effected and confirmed onchain). The reason for the manual approach can be found in the ur369.eth.limo UI -Insight page -- point (14).
+Note: For this las part -as described in (9)- the code works up to sending funds to the corresponding addresses for A, B, C and D -- the subsequent transfers from said addresses are outside of the scope of this code and the transparent nature of the chain shall attest of said transfers (after the transfers are effected and confirmed onchain). The reason for the manual approach can be found in the ur369.eth.limo UI -Insight page, point (14).
 
 **_Procedure_**
 
