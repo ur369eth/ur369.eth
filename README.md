@@ -43,13 +43,13 @@ Description of working of Smart Contract is as follows:
 
 The decentralized protection of crypto tokens works by allowing the users to set (and confirm onchain) their own Classical Sign Key (and also Quantum Resistant Sign Key -optional-) to abstract away the wallet's private keys to sign transactions.
 
-**(6) On the other side of the coin >>** this is a mechanism in wich, without having a centralized custody of any crypto token, the system accepts deposits of approved crypto tokens to isolate/remove said crypto tokens from circulation to keep them *safeguarded from theft and protected from quantum threats within the smart contract*, and simultaneously, upon receiving crypto tokens, the system mints urTokens (ultra resistant Tokens) and automatically sends urTokens to the user's wallet address at 1:1 ratio in regards of the protected crypto tokens. 
+**(6) On the other side of the coin >>** this is a mechanism in wich, without having any centralized custody of any crypto token, the system accepts deposits of approved crypto tokens to isolate/remove said crypto tokens from circulation to keep them *safeguarded from theft and protected from quantum threats within the smart contract*, and simultaneously, upon receiving crypto tokens, the system mints urTokens (ultra resistant Tokens) and automatically sends urTokens to the user's wallet address at 1:1 ratio in regards of the protected crypto tokens. 
 
-**(9) On the edge of the coin >>** this is a self-organizing distributive-system, because before-and-for this process to be accomplished (i.e., the decentralized protection of crypto tokens plus issuing-and-sending urTokens to the user's wallet) >> the system shows (upfront) to the user >> the benefaction-fee for the protection-service provided:
+**(9) On the edge of the coin >>** this is a self-organizing and self-sustaining distributive-system, because before-and-for this process to be accomplished (i.e., the decentralized protection of crypto tokens plus issuing-and-sending urTokens to the user's wallet) >> the system shows (upfront) to the user >> the benefaction-fee for the protection-service provided:
 
-(i) A one time flat fee of $3.69 per address, collected in crypto, **_charged only once per wallet addres and only if the user opts for the Quantum Resistant Sign Key._**
+(i) A $3.69 benefaction-fee, collected in crypto, **_charged only once per wallet addres and only if the user opts for the Quantum Resistant Sign Key._**
 
-(ii) A $3.69 benefaction-fee collected in crypto **_charged every time the user protects a crypto asset against theft_**.
+(ii) A $3.69 benefaction-fee collected in crypto **_charged every time the user alloctates a crypto asset within the contract to protect against theft_**.
 
 When the system receives the benefaction-fee >> programmatically distributes the funds into 4 addresses as follows: 
 
@@ -71,16 +71,16 @@ Note: For this las part -as described in (9)- the code works up to sending funds
 
 - Once on the UI dashboard, the user clicks on the 'Protect' button corresponding to the crypto token they want to protect.
   
-- The system will check if this is a new user/address or not. In case of an already registered user/address the system just shows the form for the user to allocate the desired amount of crypto tokens into the contract to be protected.
+- The system will check if this is a new user/address or not. In case of an already registered user/address the system just shows the form for the user to allocate the desired amount of tokens into the contract to be protected.
 
 - In case of new user/address the system will randomly generate an encrypted Master Key for the user (only shown once on that section and during that time) and will prompt the user to set a Sign Key or a Quantum Resistant Sign Key (optional). 
 
 - The Master Key will be used to (A) recover the user's Sign Key in case it is lost or forgotten and (B) for the user to add Quantum Resistant Sign Key (in case the user did not add it in the first instance and wanted to add the Quantum Key later).
 
-- Therefore, previous to proceeding to setting the Sign Key, the system clearly indicates to the user a step-by-step guide to safely export the provided and encrypted Master Key from online to offline with: (A) near zero chances of misspelling it (as the Master Key is comprised of seperators, placed every 5 characters, to facilitate its clear reading and transcription) and (B) with a low posibility for the Master Key to be remotely viewed or detected/intercepted by any potential bad actor; as the system, before allowing the Master Key to be visible on the screen:
+- Therefore, previous to proceeding to setting the Sign Key, the system clearly indicates to the user a step-by-step guide to safely export the provided and encrypted Master Key from online to offline with: (A) near zero chances of misspelling it (as the Master Key is comprised of seperators, placed every 5 characters, to facilitate its clear reading and transcription) and (B) with near zero chances for the Master Key to be remotely viewed or detected/intercepted by any potential bad actor; as the system, before allowing the Master Key to be visible on the screen:
 
-- (i) Indicates and strongly recommends the user to have the internet off, and the Master Key **can only be viewed after the user checks a box to acknowledge the internet is off**
-- (ii) On purpuse, the system does not provide a "copy Master Key button" in the UI, thus inducing the user to export the Master Key by writing it offline instead of copying the Master Key as the practice of copying it could carry a risk vector, and
+- (i) Indicates and strongly recommends the user to turn the internet off, and the Master Key **can only be viewed after the user checks a box to acknowledge the internet is off**
+- (ii) On purpuse, the system does not provide a "copy Master Key button" in the UI, thus inducing the user to export the Master Key by writing it offline instead of copying the Master Key as the practice of copying the Master Key could carry a risk vector, and
 - (iii) The system also alerts to never take a picture or screenshot of the Master Key.
     
 - **_Instructions to safely export the Master Key from online to offline (the 8 steps below are out of the scope of the code - however, these are included here in order to assist with the full understanding of the hollistic approach about best parctice in Crypto Security and the overall rationale):_**
@@ -94,34 +94,34 @@ Note: For this las part -as described in (9)- the code works up to sending funds
 - *_(7) Check the box(es) 'Add Quantum Resistant Protection (Optional)' and 'I understand ur369.eth cannot recover the Sign Key for me'_*
 - *_(8) The user sets Sign Key (a strong password or PIN that the user selects on their end to abstract away the private keys and protect tokens from theft) or the user sets a Quantum Resistant Sign Key (a strong password or PIN that the user selects on their end -- for this option the system incorporates a Dilithium Crystrals Algorithim) to abstract away the private keys and protect tokens from quantum threats_*
   
-- ## Code functionality resumes and continues on the next fields
+- ## Code functionality resumes and continues on the following fields
   
 - In regards to point 8 above >> only after the user has acknowledged and checked the respective boxes 'Add Quantum Resistant Protection (optional)' and 'I understand ur369.eth cannot recover the Sign Key for me' is that the user can continue to 'Set Sign Key' and click on 'Enable Sign Key'.
 
 - After clicking 'Enable Sign Key' the user signs the transaction on their wallet. When the transaction is confirmed onchain the system pairs and saves the Master Key and the Sign Key.
 
-- The UI presents a pop-up for the user showing they have enabled Classical Sign Key or the Quantum Resistant Sign Key and provides the user with a hyperlink for them to see the transaction on the block explorer.
+- The UI presents a pop-up for the user showing they have enabled Classical Sign Key or the Quantum Resistant Sign Key (if this was the selected Key to sign) and provides the user with a hyperlink for them to review the transaction on the block explorer.
 
-- On the block explorer the user can see the onchain call function 'Set Master Key And Sign Key' if classical Sign Key was enabled; or the user can see 'Set Master Key And Quantum Resistant Sign Key' if the Quantum Resistant Key was the option selected.
+- On the block explorer the user can see the onchain-call-function 'Set Master Key And Sign Key' if classical Sign Key was enabled; or the user can see 'Set Master Key And Quantum Resistant Sign Key' if the Quantum Resistant Key was the option selected.
 
-- When the user comes back to the UI and closes the pop-up with previous transaction (re enabling Sign Key), the UI presents a modal to enter the desired amount of native tokens the user wants to protect.
+- When the user comes back to the UI and closes the pop-up with previous transaction (re enabling Sign Key), the UI presents a modal to enter the desired amount of tokens the user wants to protect.
 
-- The user inputs the amount of crypto tokens they want to protect (allocate into the contract), the UI shows the benefaction-fee of 0.369% (or 0.0369%) that the user must pay accordingly in order to execute the operation. The UI shows the amount of urTokens (ultra resistant Tokens) the user will receive in their connected wallet address; for example, if the user is allocating ETH the user will receive urETH at 1:1 ratio after the benefaction-fee.
+- The user inputs the amount of tokens they want to protect (allocate into the contract), the UI shows the benefaction-fee of $3.69 that the user must pay in crypto in order to execute the 'Protect' operation. The UI shows the amount of tokens the user will allocate within the contract and the amount of urTokens (ultra resistant Tokens) the user will receive in their connected wallet address at 1:1 ratio.
 
-- If all is ok on the user's end, then the user inputs their Sign Key and confirms the transaction on their wallet.
+- To send the transaction >> the user must input their Sign Key and confirm the transaction on their wallet.
 
 - After the transaction is confirmed, the UI shows the amount of crypto tokens protected (allocated within the contract), the benefaction-fee amount the user paid to the contract, the amount of urTokens the contract issued and sent to the user's account. The UI also provides the user with a hyperlink for them to see and inspect the transaction details on the block explorer.
 
-- On the block explorer the user can see all details as stated above and also how the benefaction fee they paid was automatically distributed into 4 addresses ((1)urgift.eth / (2)ur-impact.eth / (3)ur369self-sustain.eth / (4)ur369community-devs.eth).
+- On the block explorer the user can see all details as stated above and also how the benefaction fee they paid was automatically distributed into the 4 addresses: (1)urgift.eth / (2)ur-impact.eth / (3)ur369self-sustain.eth / (4)ur369community-devs.eth).
 
-- Once protected, the user can unportect and withdraw the crypto tokens at anytime and without restrictions. For this operation the user only has to click on 'Claim' button and proceed to burn the desired amount of urTokens and they automatically receive the crypto tokens into their wallet.
+- Once protected, the user can unportect and withdraw the crypto tokens at anytime and without restrictions. For this operation the user only has to click on 'Claim' button and proceed to burn the desired amount of urTokens and they automatically receive the corresponding crypto tokens into their wallet.
 
 
 ### Benefaction-Fee Collection System
 
 **_Description:_** Two types of benefaction-fee are charged for the provided service of protecting the crypto assets. The protcol always displays and inform about the fee upfront, thus the user becomes aware of the fee to be paid:
 
-(i) The Quantum Resistant Protection: A $3.69 fee collected in crypto **_only once per wallet address._** Enabling the Quantun Resistant Sign Key (to protect against quantum threats) is optional, and it can be activated at the beginning of the wallet address interaction with the protocol or at a later date.
+(i) The Quantum Resistant Protection: A $3.69 fee collected in crypto **_only once per wallet address._** Enabling the Quantun Resistant Sign Key (to protect against quantum threats) is optional, and it can be activated at the beginning of the wallet address interaction with the protocol or at any future time as the user would desire.
 
 (ii) The Classical Anti-Theft Protection: A $3.69 fee collected in crypto **_every time the user protects a crypto asset against theft_**. 
 
