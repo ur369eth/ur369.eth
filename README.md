@@ -8,7 +8,7 @@ ur stands for **ultra resistant** -- ur369.eth.limo is the distributed access po
 
 # What are urTokens (ultra resistant Tokens)?
 
-urTokens are ERC-20 tokens backed by cryptographic tokens at 1:1 ratio. Meaning that, if for example, a user has an allocation of 369 ETH into the contract, then to that user the contract automatically minted/issued and sent 369 urETH (ultra resistant ETH) to their wallet address.
+urTokens are ERC-20 tokens backed by cryptographic tokens at 1:1 ratio. Exegesis: if a user allocates 369 ETH into the contract, thenthe contract automatically mints and sends 369 urETH (ultra resistant ETH) to their wallet address.
 
 Advantage of urTokens over native tokens and/or ERC-20 tokens as well as over any other token-standard (e.g., BEP-20, SPL, etc):
 
@@ -47,13 +47,13 @@ The decentralized protection of crypto tokens works by allowing the users to set
 
 **(9) On the edge of the coin >>** this is a self-organizing and self-sustaining distributive-system, because before-and-for this process to be accomplished (i.e., the decentralized protection of crypto tokens plus issuing-and-sending urTokens to the user's wallet) >> the system shows (upfront) to the user >> the benefaction-fee for the protection-service provided:
 
-(i) A $3.69 benefaction-fee, collected in crypto, **_charged only once per wallet addres and only if the user opts for the Quantum Resistant Sign Key._**
+(i) A $3.69 benefaction-fee, collected in the native token of the chain, **_charged only once per wallet addres and only if the user opts for the Quantum Resistant Sign Key._**
 
-(ii) A $3.69 benefaction-fee collected in crypto **_charged every time the user alloctates a crypto asset within the contract to protect against theft_**.
+(ii) A $3.69 benefaction-fee collected in the native token of the chain **_charged every time the user alloctates a crypto asset within the contract to protect against theft_**.
 
 When the system receives the benefaction-fee >> programmatically distributes the funds into 4 addresses as follows: 
 
-(A) 30% to the Impact Pool (ur-impact.eth) to fund public goods (e.g., Giveth, Gitcoin, the Giving Block...) and to award power-users* in the community
+(A) 30% to the Impact Pool (ur-impact.eth) to fund public goods (e.g., Giveth, Gitcoin, the Giving Block, Open Sats...) and to award ideas providers (IPs).
 
 (B) 30% to the Gift Pool (urgift.eth) to award randomly selected users every 369 hours
 
@@ -61,11 +61,7 @@ When the system receives the benefaction-fee >> programmatically distributes the
 
 (D) 10% to ur369community-devs.eth to support the Community and Developers Benefit Fund 
 
-*Power-users are awarded using 10% from the 30% mentioned in point (A) above. The mechanism for the Power-users to receive the award(s) is outside of the scope of this code; however for transparency sake, here it is described: 
-
-Power-users are (i) urTokens Liquidity Providers (LPs), (ii) users that provide ideas for the ur369 ecosystem and their ideas are (or will be implemented), and (iii) users who minted the ur369NFT -a soulbound NFT outside of this contract- from which (iv) the unique number identifier of the NFT and (v) the same address that minted the NFT having urTokens within it >> therefore any user with any of the atribute(s) as mentioned in points (i) to (v) are Power-user of the ur369 ecosystem and they can received boosted award(s) from the address ur369NFT-gift.eth, the address ur-stateless.eth (Stateless Pool), and from the address ur-impact.eth (Impact Pool). 
-
-Note: For this las part -as described in (9)- the code works up to sending funds to the corresponding addresses for A, B, C and D -- the subsequent transfers from said addresses are outside of the scope of this code and the transparent nature of the chain shall attest of said transfers (after the transfers are effected and confirmed onchain). The reason for the manual approach can be found in the ur369.eth.limo UI -Insight page, point (14).
+Note: For this las part the code works up to sending funds to the corresponding addresses for A, B, C and D -- the subsequent transfers from said addresses are outside of the scope of this code and the transparent nature of the chain shall attest of said transfers (after the transfers are effected and confirmed onchain). The reason for this manual-transactions after funds are received into the respective addresses programatically, can be found in the ur369.eth.limo UI -Insight page, point (14).
 
 **_Procedure_**
 
@@ -121,9 +117,9 @@ Note: For this las part -as described in (9)- the code works up to sending funds
 
 **_Description:_** Two types of benefaction-fee are charged for the provided service of protecting the crypto assets. The protcol always displays and inform about the fee upfront, thus the user becomes aware of the fee to be paid:
 
-(i) The Quantum Resistant Protection: A $3.69 fee collected in crypto **_only once per wallet address._** Enabling the Quantun Resistant Sign Key (to protect against quantum threats) is optional, and it can be activated at the beginning of the wallet address interaction with the protocol or at any future time as the user would desire.
+(i) The Quantum Resistant Protection: A $3.69 fee collected in the native token of the chain **_only once per wallet address._** Enabling the Quantun Resistant Sign Key (to protect against quantum threats) is optional, and it can be activated at the beginning of the wallet address interaction with the protocol or at any future time as the user would desire.
 
-(ii) The Classical Anti-Theft Protection: A $3.69 fee collected in crypto **_every time the user protects a crypto asset against theft_**. 
+(ii) The Classical Anti-Theft Protection: A $3.69 fee collected in the native token of the chain **_every time the user protects a crypto asset against theft_**. 
 
 Upon collection of any of the fee type >> the system automatically distributes the flat amount fee to 4 designated address with a social-good-purpose.  
 
@@ -163,7 +159,7 @@ Every 369 hours (Gift Pool) and every 369 days (Stateless Pool) a participant th
 
 *_Just as a courtesy and honoring transparency, here is shared the Award System Operation (Manual Approach):_*
 
-*_The objective is to avoid a sybil exploit that can be effected if the system sends awards automatically via code (the sybil exploit was found while testing) and the purpose is to eliminate the exploit and for the participants to receive awards without any possibility for them tricking the system. Awards can be sent from: (A) the Gift Pool, (B) the Impact Pool, and (C) the Stateless Pool (any award for A, B and C is received by the user if they completed their respective tasks and fulfilled the stated pool conditions - see Awards page 'Conditions to get the award' section). Moreover, users can receive awards (manually) from satellite-addresses that work in harmony with the ur369NFT mint._* 
+*_The objective is to avoid a sybil exploit that can be effected if the system sends awards automatically via code (the sybil exploit was found while testing) and the purpose is to eliminate the exploit and for the participants to receive awards without any possibility for them tricking the system. Awards can be sent from: (A) the Gift Pool, (B) the Impact Pool, and (C) the Stateless Pool (any award for A, B and C is received by the user if they completed their respective tasks and fulfilled the stated pool conditions - see Awards page 'Conditions to get the award' section). 
 
 *_The transparent nature of a public blockchain (like Ethereum) where urTokens are deployed, can attest for the fullfilment of these manual transactions that can be correlated and publicly audited to confirm that an address displayed in the UI, for example, did (or did not) mint the ur369NFT and did or did not receive the corresponding urTokens award if selected by the system._*
 
