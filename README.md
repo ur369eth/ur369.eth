@@ -8,7 +8,7 @@ ur stands for **ultra resistant** -- ur369.eth.limo is the distributed access po
 
 # What are urTokens (ultra resistant Tokens)?
 
-urTokens are ERC-20 tokens backed by cryptographic tokens at 1:1 ratio. Exegesis: if a user allocates 369 ETH into the contract, thenthe contract automatically mints and sends 369 urETH (ultra resistant ETH) to their wallet address.
+urTokens are ERC-20 tokens backed by cryptographic tokens at 1:1 ratio. Exegesis: if a user allocates 369 ETH into the contract, then the contract automatically mints and sends 369 urETH (ultra resistant ETH) to their wallet address.
 
 Advantage of urTokens over native tokens and/or ERC-20 tokens as well as over any other token-standard (e.g., BEP-20, SPL, etc):
 
