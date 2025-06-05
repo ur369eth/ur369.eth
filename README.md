@@ -77,7 +77,7 @@ Note: For this las part the code works up to sending funds to the corresponding 
 
 - (i) Indicates and strongly recommends the user to turn the internet off, and the Master Key **can only be viewed after the user checks a box to acknowledge the internet is off**
 - (ii) On purpuse, the system does not provide a "copy Master Key button" in the UI, thus inducing the user to export the Master Key by writing it offline instead of copying the Master Key as the practice of copying the Master Key could carry a risk vector, and
-- (iii) The system also alerts to never take a picture or screenshot of the Master Key.
+- (iii) The system also alerts to never take a picture or screenshot of the Master Key
     
 - **_Instructions to safely export the Master Key from online to offline (the 8 steps below are out of the scope of the code - however, these are included here in order to assist with the full understanding of the hollistic approach about best parctice in Crypto Security and the overall rationale):_**
   
