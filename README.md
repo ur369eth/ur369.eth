@@ -39,7 +39,9 @@ Description of working of Smart Contract is as follows:
 
 **_Definition:_** Let's share a comprehensive definition from three factual perspectives (3/6/9) using "a coin" for verbal illustration:
 
-**(3) On one side of the coin >>** this is an independent onchain 2FA (with extra functionalities). The main objective is to help prevent (and stop in full) the theft of cryptogrpahic tokens (also called crypto tokens or tokens); such theft is widely caused by bad actors infesting the crypto ecosystem with constant phishing attacks, wallet drainers, and with other sophisticated exploits (see Bybit hack). The scope of the *decentralized protection* of crypto tokens includes *potential quantum threats* (incorporating Dilithium-Crystals into the security scheme).
+**(3) On one side of the coin >>** this is an independent onchain 2FA (with extra functionalities). The main objective is to help prevent (and stop in full) the theft of cryptogrpahic tokens (also called crypto tokens or tokens); such theft is widely caused by bad actors infesting the crypto ecosystem with constant phishing attacks, wallet drainers, and with other sophisticated exploits (see Bybit hack). 
+
+The scope of the *decentralized protection* of crypto tokens includes *potential quantum threats* (incorporating Dilithium-Crystals into the security scheme).
 
 The decentralized protection of crypto tokens works by allowing the users to set (and confirm onchain) their own Classical Sign Key (and also Quantum Resistant Sign Key -optional-) to abstract away the wallet's private keys to sign transactions.
 
