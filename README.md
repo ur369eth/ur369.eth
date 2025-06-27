@@ -63,7 +63,7 @@ When the system receives the benefaction-fee >> programmatically distributes the
 
 (D) 10% to ur369community-devs.eth to support the Community and Developers Benefit Fund 
 
-Note: For this las part the code works up to sending funds to the corresponding addresses for A, B, C and D -- the subsequent transfers from said addresses are outside of the scope of this code and the transparent nature of the chain shall attest of said transfers (after the transfers are effected and confirmed onchain). The reason for this manual-transactions after funds are received into the respective addresses programatically, can be found in the ur369.eth.limo UI -Insight page, point (14).
+Note: For this last part the code works up to sending funds to the corresponding addresses for A, B, C and D -- the subsequent transfers from said addresses are outside of the scope of this code and the transparent nature of the chain shall attest of said transfers (after the transfers are effected and confirmed onchain). The reason for this manual-transactions after funds are received into the respective addresses programatically, can be found in the ur369.eth.limo UI -Insight page, point (14).
 
 **_Procedure_**
 
